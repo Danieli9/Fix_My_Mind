@@ -9,6 +9,9 @@ textarea {
 	font-size: 1rem;
 	line-height: $font__line-height-body;
 }
+p {
+	@include fluid-type(420px, 1440px, 16px, 17px);
+}
 
 @import "headings";
 @import "copy";

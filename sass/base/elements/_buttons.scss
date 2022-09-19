@@ -19,3 +19,65 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
 	}
 }
+.btn {
+	color: #FEFEFE !important;
+	background-color: $btn__color;
+	padding: $btn__padding;
+	text-decoration: none;
+	&--header {
+		@extend .btn;
+		margin-left: 85px;
+		border-radius: $btn__radius;
+		font-size: 22px;
+		&__hero {
+			@extend .btn--header;
+			margin-left: 0px;
+			display: flex;
+			width: fit-content;
+			margin-left: auto;
+			margin-right: auto;
+			@media (min-width: 992px) {
+				margin-bottom: 50px;
+				display: inline-block;
+			}
+			@media (min-width: 1400px) {
+				margin-bottom: 0px;
+			}
+		}
+	}
+	&--footer {
+		padding: 0;
+		border: 0;
+		border-radius: 0;
+		background: transparent;
+		color: #5583E1;
+		font-weight: 700;
+		font-size: 21px;
+		margin-bottom: 10px;
+		@media (min-width: 992px) {
+			margin-bottom: 30px;
+		}
+		&.show {
+			svg {
+				transform: rotate(180deg);
+			}
+		}
+		svg {
+			width: 18px;
+			height: 18px;
+			transition: transform .4s ease;
+			@media (min-width: 992px) {
+				display: none;
+			}
+		}
+	}
+	&__content {
+		@extend .btn;
+		border-radius: $btn__radius;
+		font-size: 22px;
+		display: flex;
+		width: fit-content;
+		margin: auto;
+	}
+
+}

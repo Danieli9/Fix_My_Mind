@@ -5,4 +5,38 @@ h4,
 h5,
 h6 {
 	clear: both;
+	color: $text_dark_blue;
+	position: relative;
+	span {
+		color: $text_white_blue;
+	}
+}
+h1,
+.h1 {
+	@include fluid-type(420px, 1440px, 21px, 60px);
+}
+
+h2,
+.h2 {
+	@include fluid-type(420px, 1440px, 26px, 56px);
+}
+
+h3,
+.h3 {
+	@include fluid-type(420px, 1440px, 22px, 27px);
+}
+
+h4,
+.h4 {
+	@include fluid-type(420px, 1440px, 16px, 36px);
+}
+
+h5,
+.h5 {
+	@include fluid-type(420px, 1440px, 20px, 20px);
+}
+
+h6,
+.h6 {
+	@include fluid-type(420px, 1440px, 20px, 20px);
 }
