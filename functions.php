@@ -139,7 +139,7 @@ add_action( 'widgets_init', '_s_widgets_init' );
  */
 
 function _s_scripts() {
-	wp_enqueue_style( 'main-css', get_template_directory_uri() . '/style.css', array(), '1.1', 'all');
+	wp_enqueue_style( 'main-css', get_template_directory_uri() . '/css/style.min.css', array(), '1.1', 'all');
 	wp_style_add_data( '_s-style', 'rtl', 'replace' );
 
 	$jquery_cdn = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';

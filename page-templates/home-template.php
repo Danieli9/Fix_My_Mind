@@ -31,7 +31,7 @@ get_header();
 
     <section class="home__section--second">
         <div class="container">
-            <h6>home__section--second</h6>
+            <h6>slider</h6>
         </div>
     </section>
 
