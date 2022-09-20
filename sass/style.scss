@@ -1,48 +1,32 @@
 
+// import bootstrap
+@import "vendors/bootstrap/bootstrap";
+@import "vendors/bootstrap/bootstrap-grid";
+// @import "vendors/bootstrap/bootstrap-reboot";
+// @import "vendors/bootstrap/bootstrap-utilities";
 
 // Import variables and mixins.
 @import "abstracts/abstracts";
 
-/*--------------------------------------------------------------
-# Generic
---------------------------------------------------------------*/
-
-/* Normalize
---------------------------------------------- */
+/* Normalize*/
 @import "generic/normalize";
 
-/* Box sizing
---------------------------------------------- */
+/* Box sizing */
 @import "generic/box-sizing";
 
-/*--------------------------------------------------------------
-# Base
---------------------------------------------------------------*/
+/* Base */
 @import "base/base";
 
-/*--------------------------------------------------------------
-# Layouts
---------------------------------------------------------------*/
+/* Layouts */
 @import "layouts/home";
 @import "layouts/footer";
 
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
+/* Components */
 @import "components/components";
 
-/*--------------------------------------------------------------
-# Plugins
---------------------------------------------------------------*/
 
-/*--------------------------------------------------------------
-# Utilities
---------------------------------------------------------------*/
-
-/* Accessibility
---------------------------------------------- */
+/* Accessibility */
 @import "utilities/accessibility";
 
-/* Alignments
---------------------------------------------- */
+/* Alignments  */
 @import "utilities/alignments";
