@@ -11,6 +11,9 @@ h6 {
 		color: $text_white_blue;
 	}
 }
+p {
+	color: $text_dark_blue;
+}
 h1,
 .h1 {
 	@include fluid-type(420px, 1440px, 21px, 60px);

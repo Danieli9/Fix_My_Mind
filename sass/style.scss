@@ -2,8 +2,15 @@
 // import bootstrap
 @import "vendors/bootstrap/bootstrap";
 @import "vendors/bootstrap/bootstrap-grid";
+
 // @import "vendors/bootstrap/bootstrap-reboot";
 // @import "vendors/bootstrap/bootstrap-utilities";
+
+// import swiper 
+@import "vendors/swiper/swiper";
+
+// cf7
+@import "vendors/cf7/cf7";
 
 // Import variables and mixins.
 @import "abstracts/abstracts";
@@ -19,6 +26,7 @@
 
 /* Layouts */
 @import "layouts/home";
+@import "layouts/testimonials";
 @import "layouts/footer";
 
 /* Components */

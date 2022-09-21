@@ -1,0 +1,61 @@
+.fmm__section {
+    &--testimonials {
+        background-color: #B4D2DC;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @media (min-width: 768px) {
+            padding-top: 80px;
+            padding-bottom: 70px;
+        }
+        .single--testimonial {
+            background-color: #FEFEFE;
+            position: relative;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 22px 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .content {
+                h3 {
+                    text-align: center;
+                    line-height: 1;
+                    margin-bottom: 0;
+                }
+                .reviews-stars {
+                    display: flex;
+                    justify-content: center;
+                    color: #f7ba11;
+                    font-size: 35px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    margin-bottom: 0;
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+            .content--foter {
+                margin-top: 20px;
+                .date {
+                    font-weight: normal;
+                    color: #7C7B7C;
+                    text-align: center;
+                    margin-bottom: 0;
+                    font-size: 16px;
+                }
+                .name {
+                    text-align: center;
+                    margin-bottom: 0;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            }
+            svg {
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+            }
+        }
+    }
+}

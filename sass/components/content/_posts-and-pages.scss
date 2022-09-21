@@ -16,3 +16,25 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.bg-blue {
+	background-color: #5584e0;
+}
+
+.site-main {
+	padding-top: 120px;
+	background-color: #f3f8fb;
+	@media (min-width: 768px) {
+		padding-top: 200px;
+	}
+	.container--content {
+		margin-bottom: 80px;
+		max-width: 1070px;
+		.entry-content {	
+			h2 {
+				@include fluid-type(420px, 1440px, 22px, 27px);
+			}
+		}
+	}
+
+}

@@ -72,5 +72,46 @@ document.addEventListener("DOMContentLoaded", function(){
 	}
 	footerMenu();
 
+	function swiper() {
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 1,
+			spaceBetween: 50,
+			navigation: {
+			  nextEl: ".swiper-button-next",
+			  prevEl: ".swiper-button-prev",
+			},
+			autoplay: {
+				delay: 2000,
+			},
+			  // Responsive breakpoints
+			breakpoints: {
+				// when window width is >= 640px
+				576: {
+				spaceBetween: 30,	
+				slidesPerView: 2,
+				spaceBetween: 40
+				},
+				992: {
+				slidesPerView: 3,
+				spaceBetween: 40
+				}
+			}
+		});
+	}
+	swiper();
+
+	function removeTopMenu() {
+
+	   window.onscroll = function() {
+		var body = document.querySelector("body");
+
+		if ( window.pageYOffset > 200 ) {
+			body.classList.add("remove_top_menu");
+		} else {
+			body.classList.remove("remove_top_menu");
+		}
+	}
+	}
+	removeTopMenu();
 }); 
 // DOMContentLoaded  end

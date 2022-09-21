@@ -2,9 +2,15 @@ table {
 	margin: 0 0 1.5em;
 	width: 100%;
 }
+#page {
+	overflow-x: hidden;
+}
 .container {
 	padding: 0 20px;
 	@media (min-width: 1200px) {
 		padding: 0;
 	}
+}
+.position-relative {
+	position: relative;
 }

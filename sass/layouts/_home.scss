@@ -19,7 +19,7 @@
         .header--row {
             position: relative;
             max-height: 705px;
-            background: linear-gradient(180deg, rgba(78,122,209,0) 75%, rgba(81,126,216,1) 75%);
+            background: linear-gradient(180deg, rgba(78,122,209,0) 75%, rgba(78, 122, 209,1) 75%);
             @media (min-width: 500px) {
                 max-height: 785px;
             }
@@ -97,8 +97,79 @@
 
 }
 
-.home__section {
+.fmm__section {
+    &--second {
+        background-color: #F3F8FB;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        .review--holder {
+            width: fit-content;
+            padding-top: 70px;
+            img {
+                max-width: 125px;
+                height: auto;
+                display: flex;
+                margin: auto;
+            }
+            .review--score {
+                display: flex;
+                p {
+                    margin-bottom: 0px;
+                    font-size: 26px;
+                    // color: #77756a;
+                }
+                .reviews-stars {
+                    display: flex;
+                    align-items: center;
+                    color: #F7BA11;
+                    font-size: 25px;
+                }
+            }
+            p {
+                text-align: center;
+            }
+        }
+        .mySwiper {
+            // display: contents;
+            .swiper-wrapper {
+                padding-bottom: 70px;
+                .swiper-slide {
+                    height: auto;
+                    .text-holder {
+                        padding: 20px;
+                        background-color: #FEFEFE;
+                        border-radius: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 100%;
+                        P {
+
+                        }
+                        .review {
+                            h5 {
+                                font-weight: 700;   
+                                font-size: 21px;
+                            }
+                            .date {
+                                color: #9E9E9E;
+                                margin-bottom: 0;
+                                font-size: 15px;
+                            }
+                            .reviews__stars {
+                                color: #F5BB11;
+                                font-size: 26px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     &--third {
+        &.testimonial {
+            margin-bottom: 70px;    
+        }
         .container--content {
             max-width: 1170px;
             h1,h2 {
@@ -135,8 +206,12 @@
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
+                margin-bottom: 20px;
                 @media (min-width: 375px) {
                     flex-direction: row;
+                }
+                @media (min-width: 576px) {
+                    margin-bottom: 0px;
                 }
                 .signature {
                     order: 2;
@@ -162,6 +237,7 @@
                         p {
                             margin: 0;
                             font-size: 16px;
+                            color: #FFF;
                             @media (min-width: 576px) {
                                 font-size: 17px;
                             }
@@ -662,6 +738,7 @@
             @include fluid-type(420px, 1440px, 16px, 33px);
             text-align: center;
             margin-bottom: 30px;
+            color: #fff;
         }
         .img--holder {
             display: flex;
@@ -715,6 +792,7 @@
                             display: table-cell;
                             vertical-align: middle;
                             margin-bottom: 0;
+                            color: #FFF;
                             @include fluid-type(420px, 1440px, 17px, 33px);
                         }
                     }

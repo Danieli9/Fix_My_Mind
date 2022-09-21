@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home Template
+ * Template Name: treatments Template
  */
 
 // Exit if accessed directly.
@@ -136,58 +136,56 @@ get_header();
             </div>
         </div>
     </section>
-
-    <section class="fmm__section--fifth">
+    
+    <section class="fmm__section--ninth">
         <div class="container container--content">
-            <h2 class="h1"><span>About</span> Fix My Mind London</h2>
-            <p>We became hypnotherapists because we always wanted to help people change.  But 1st, we thought you might want to know a bit about us and why we decided to become therapists.  So, James 1st:</p>
-            <p>Before becoming a hypnotherapist I had completely lost my way.  I was in a well-paid job that I didn’t like in the media industry.  My life-changed via one session of hypnotherapy on June 1st 2006. I knew then that Hypnotherapy is what I wanted to do, so I started to retrain.  After 1000hrs of training, with the best trainers and in a variety of therapies, I started working with clients full-time in 2012 and have since successfully worked with thousands of people.</p>
-            <p>David is one of the UK’s leading practitioners of Hypnotherapy and has been qualified to the highest level since 1993.  Before becoming a therapist, David had a senior career in the city.  And after the death of his father and a divorce, he decided to turn his life around, which he did as a result of his training and on-going personal development.  Since 1993, he’s worked with countless clients and has trained many of the UK’s leading therapists to become therapists themselves.</p>
-            <p>David and James met in 2010, when David trained James in NLP and a bond was formed.  We believe that wherever you are, therapy should be a consistent experience, as opposed to the random one that sadly exists for so many clients.  As a result of that, we created Fix My Mind and now have experienced therapists giving the same service across the country.</p>
-            <p>So, we’re hypnotherapists that have been in not great places and know a bit about how you may feel. We think you want to work with people with whom you can be confident are trained and likely to help you get to the place you want to be.</p>
-            <p>We will only work with clients that we are able to help.  This approach and the areas that we focus on, such as panic attacks, phobias and anxiety have seen Fix My Mind receive 90 5* reviews Indeed, Dame Kelly Holmes gave her experience of working with us ‘10/10’ for a programme we did on BBC Radio 4.*</p>
-            <p>In addition we’ve been featured in multiple other national & international media brands, meaning that you know you are incredibly safe and capable hands.  If you want to find out how we can help you, then use the quick contact form below and get a free 20 minute consultation, as well as our free 1hr Anxiety Relaxation Programme valued at £17.99 that could really help you..</p>
-            <p>Thanks,</p>
-            <p>James & David</p>
-            <a href="#" class="btn__content">See all our treatments</a>
-        </div>
-    </section>
-
-    <section class="fmm__section--sixth">
-        <div class="container p-0">
-            <ul>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/bbc-radio-4.png?id=07f591fd8a1364b6e9ce" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/bbc-radio-solent.png?id=1f43dfe1d387277f5071" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/city-am.png?id=7010fec6fa685b8ae0c6" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/daily-mail.png?id=89aff4e70d8d0d666dc0" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/gulf-news.png?id=ffe63f54cd67e04f66e5" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/hampshire-chronicle.png?id=b59b8fde0b5e9369cce6" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/hampshire-life.png?id=2a26014c83c41a111ce4" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/slimming-world.png?id=4d9029509c938092feaf" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/the-observer.png?id=fd68488baf68cfcfcb07" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/womens-health.png?id=7f84523fe1e464ca6bd9" alt="test"></li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="fmm__section--seventh">
-        <div class="container-md">
-            <div class="listen__here--holder">
-                <div class="row g-0">
-                    <div class="col-5 img--holder">
-                        <img class="img-fluid" src="http://fixmymind.test/wp-content/uploads/2022/09/Kelly-Holmes.png" alt="kelly">
+            <h2><span>Why choose me as</span><br> your hypnotherapist</h2>
+            <p>My life-changed via one session of hypnotherapy on June 1st 2006. I knew then that Hypnotherapy is what I wanted to do, so I started to retrain.  After 1000hrs of training, with the best trainers and in a variety of therapies, I started working with clients full-time in 2012 and have since successfully worked with thousands of people.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci:</p>
+            <div class="row">
+                <div class="col-md-6 home--card">
+                    <div class="header-img-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.8 74"><path class="cls-1" d="M26.92,0A22.71,22.71,0,0,0,13.37,40.92L4.28,56.27h0A1.68,1.68,0,0,0,4,57.57a1.62,1.62,0,0,0,.78,1.08,1.64,1.64,0,0,0,1.33.18,1.7,1.7,0,0,0,1-.84l9-15.29a22.47,22.47,0,0,0,21.43,0L49.19,62.24h-6.3a1.67,1.67,0,0,0-1.5.92l-2.84,5.67L28.37,52.09h0a1.68,1.68,0,0,0-1.45-.82,1.65,1.65,0,0,0-1.44.82L15.28,68.83l-2.84-5.67A1.66,1.66,0,0,0,11,62.24H1.7a1.63,1.63,0,0,0-1.2.48,1.68,1.68,0,0,0,0,2.39,1.65,1.65,0,0,0,1.2.48H9.93l3.72,7.47h0a1.71,1.71,0,0,0,1.43.94,1.67,1.67,0,0,0,1.51-.81l10.32-17,10.32,17a1.65,1.65,0,0,0,1.51.81,1.67,1.67,0,0,0,1.42-.94l3.74-7.47h8.22a1.67,1.67,0,0,0,1.44-2.54L40.48,40.92A22.72,22.72,0,0,0,26.92,0Zm0,3.36A19.35,19.35,0,1,1,7.59,22.71,19.31,19.31,0,0,1,26.92,3.36Zm-.16,5.89h0a1.66,1.66,0,0,0-1.33.92l-3,6-6.77,1.49a1.69,1.69,0,0,0-1.23,1.11,1.64,1.64,0,0,0,.31,1.63l4.58,5.33-.8,6.83a1.7,1.7,0,0,0,.71,1.58,1.73,1.73,0,0,0,1.73.11l6-3.11,6,3.11a1.68,1.68,0,0,0,2.44-1.69l-.79-6.83,4.56-5.33a1.67,1.67,0,0,0,.33-1.63,1.7,1.7,0,0,0-1.24-1.11l-6.77-1.49-3-6h0a1.66,1.66,0,0,0-1.65-.92Zm.16,5.44,1.86,3.73h0a1.67,1.67,0,0,0,1.13.86l4.83,1.08-3.22,3.76h0a1.71,1.71,0,0,0-.4,1.3l.49,4.44-3.92-2.05h0a1.69,1.69,0,0,0-1.52,0l-3.94,2,.5-4.44a1.72,1.72,0,0,0-.39-1.29l-3.24-3.76,4.84-1.08h0a1.69,1.69,0,0,0,1.13-.86l1.86-3.73Z"/></svg>
+                        <h5>Experience</h5>
                     </div>
-                    <div class="col-7">
-                        <div class="text--holder">
-                            <h3 class="h1">I give my experience of hypnotherapy with James <span>10/10</span></h3>
-                            <p>Dame Kelly Holmes</p>
-                            <a href="#" class="btn">Listen Here</a>
-                            <div class="icon">
-                                <img class="img-fluid" src="http://fixmymind.test/wp-content/uploads/2022/09/bbc.png" alt="radio">
-                            </div>
-                        </div>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatem laudantium nesciunt ad ut ipsa. Expedita soluta incidunt, aliquam nam necessitatibus laboriosam nulla sunt ad nobis architecto similique ratione, doloribus totam eos dolores repellendus, quis dolor dicta. Maxime velit impedit odit eum modi tempora facilis natus ea, hic enim itaque.</p>
                 </div>
+                <div class="col-md-6 home--card">
+                    <div class="header-img-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.8 74"><path class="cls-1" d="M26.92,0A22.71,22.71,0,0,0,13.37,40.92L4.28,56.27h0A1.68,1.68,0,0,0,4,57.57a1.62,1.62,0,0,0,.78,1.08,1.64,1.64,0,0,0,1.33.18,1.7,1.7,0,0,0,1-.84l9-15.29a22.47,22.47,0,0,0,21.43,0L49.19,62.24h-6.3a1.67,1.67,0,0,0-1.5.92l-2.84,5.67L28.37,52.09h0a1.68,1.68,0,0,0-1.45-.82,1.65,1.65,0,0,0-1.44.82L15.28,68.83l-2.84-5.67A1.66,1.66,0,0,0,11,62.24H1.7a1.63,1.63,0,0,0-1.2.48,1.68,1.68,0,0,0,0,2.39,1.65,1.65,0,0,0,1.2.48H9.93l3.72,7.47h0a1.71,1.71,0,0,0,1.43.94,1.67,1.67,0,0,0,1.51-.81l10.32-17,10.32,17a1.65,1.65,0,0,0,1.51.81,1.67,1.67,0,0,0,1.42-.94l3.74-7.47h8.22a1.67,1.67,0,0,0,1.44-2.54L40.48,40.92A22.72,22.72,0,0,0,26.92,0Zm0,3.36A19.35,19.35,0,1,1,7.59,22.71,19.31,19.31,0,0,1,26.92,3.36Zm-.16,5.89h0a1.66,1.66,0,0,0-1.33.92l-3,6-6.77,1.49a1.69,1.69,0,0,0-1.23,1.11,1.64,1.64,0,0,0,.31,1.63l4.58,5.33-.8,6.83a1.7,1.7,0,0,0,.71,1.58,1.73,1.73,0,0,0,1.73.11l6-3.11,6,3.11a1.68,1.68,0,0,0,2.44-1.69l-.79-6.83,4.56-5.33a1.67,1.67,0,0,0,.33-1.63,1.7,1.7,0,0,0-1.24-1.11l-6.77-1.49-3-6h0a1.66,1.66,0,0,0-1.65-.92Zm.16,5.44,1.86,3.73h0a1.67,1.67,0,0,0,1.13.86l4.83,1.08-3.22,3.76h0a1.71,1.71,0,0,0-.4,1.3l.49,4.44-3.92-2.05h0a1.69,1.69,0,0,0-1.52,0l-3.94,2,.5-4.44a1.72,1.72,0,0,0-.39-1.29l-3.24-3.76,4.84-1.08h0a1.69,1.69,0,0,0,1.13-.86l1.86-3.73Z"/></svg>
+                        <h5>Experience</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatem laudantium nesciunt ad ut ipsa. Expedita soluta incidunt, aliquam nam necessitatibus laboriosam nulla sunt ad nobis architecto similique ratione, doloribus totam eos dolores repellendus, quis dolor dicta. Maxime velit impedit odit eum modi tempora facilis natus ea, hic enim itaque.</p>
+                </div>
+                <div class="col-md-6 home--card">
+                    <div class="header-img-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.8 74"><path class="cls-1" d="M26.92,0A22.71,22.71,0,0,0,13.37,40.92L4.28,56.27h0A1.68,1.68,0,0,0,4,57.57a1.62,1.62,0,0,0,.78,1.08,1.64,1.64,0,0,0,1.33.18,1.7,1.7,0,0,0,1-.84l9-15.29a22.47,22.47,0,0,0,21.43,0L49.19,62.24h-6.3a1.67,1.67,0,0,0-1.5.92l-2.84,5.67L28.37,52.09h0a1.68,1.68,0,0,0-1.45-.82,1.65,1.65,0,0,0-1.44.82L15.28,68.83l-2.84-5.67A1.66,1.66,0,0,0,11,62.24H1.7a1.63,1.63,0,0,0-1.2.48,1.68,1.68,0,0,0,0,2.39,1.65,1.65,0,0,0,1.2.48H9.93l3.72,7.47h0a1.71,1.71,0,0,0,1.43.94,1.67,1.67,0,0,0,1.51-.81l10.32-17,10.32,17a1.65,1.65,0,0,0,1.51.81,1.67,1.67,0,0,0,1.42-.94l3.74-7.47h8.22a1.67,1.67,0,0,0,1.44-2.54L40.48,40.92A22.72,22.72,0,0,0,26.92,0Zm0,3.36A19.35,19.35,0,1,1,7.59,22.71,19.31,19.31,0,0,1,26.92,3.36Zm-.16,5.89h0a1.66,1.66,0,0,0-1.33.92l-3,6-6.77,1.49a1.69,1.69,0,0,0-1.23,1.11,1.64,1.64,0,0,0,.31,1.63l4.58,5.33-.8,6.83a1.7,1.7,0,0,0,.71,1.58,1.73,1.73,0,0,0,1.73.11l6-3.11,6,3.11a1.68,1.68,0,0,0,2.44-1.69l-.79-6.83,4.56-5.33a1.67,1.67,0,0,0,.33-1.63,1.7,1.7,0,0,0-1.24-1.11l-6.77-1.49-3-6h0a1.66,1.66,0,0,0-1.65-.92Zm.16,5.44,1.86,3.73h0a1.67,1.67,0,0,0,1.13.86l4.83,1.08-3.22,3.76h0a1.71,1.71,0,0,0-.4,1.3l.49,4.44-3.92-2.05h0a1.69,1.69,0,0,0-1.52,0l-3.94,2,.5-4.44a1.72,1.72,0,0,0-.39-1.29l-3.24-3.76,4.84-1.08h0a1.69,1.69,0,0,0,1.13-.86l1.86-3.73Z"/></svg>
+                        <h5>Experience</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatem laudantium nesciunt ad ut ipsa. Expedita soluta incidunt, aliquam nam necessitatibus laboriosam nulla sunt ad nobis architecto similique ratione, doloribus totam eos dolores repellendus, quis dolor dicta. Maxime velit impedit odit eum modi tempora facilis natus ea, hic enim itaque.</p>
+                </div>
+                <div class="col-md-6 home--card">
+                    <div class="header-img-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.8 74"><path class="cls-1" d="M26.92,0A22.71,22.71,0,0,0,13.37,40.92L4.28,56.27h0A1.68,1.68,0,0,0,4,57.57a1.62,1.62,0,0,0,.78,1.08,1.64,1.64,0,0,0,1.33.18,1.7,1.7,0,0,0,1-.84l9-15.29a22.47,22.47,0,0,0,21.43,0L49.19,62.24h-6.3a1.67,1.67,0,0,0-1.5.92l-2.84,5.67L28.37,52.09h0a1.68,1.68,0,0,0-1.45-.82,1.65,1.65,0,0,0-1.44.82L15.28,68.83l-2.84-5.67A1.66,1.66,0,0,0,11,62.24H1.7a1.63,1.63,0,0,0-1.2.48,1.68,1.68,0,0,0,0,2.39,1.65,1.65,0,0,0,1.2.48H9.93l3.72,7.47h0a1.71,1.71,0,0,0,1.43.94,1.67,1.67,0,0,0,1.51-.81l10.32-17,10.32,17a1.65,1.65,0,0,0,1.51.81,1.67,1.67,0,0,0,1.42-.94l3.74-7.47h8.22a1.67,1.67,0,0,0,1.44-2.54L40.48,40.92A22.72,22.72,0,0,0,26.92,0Zm0,3.36A19.35,19.35,0,1,1,7.59,22.71,19.31,19.31,0,0,1,26.92,3.36Zm-.16,5.89h0a1.66,1.66,0,0,0-1.33.92l-3,6-6.77,1.49a1.69,1.69,0,0,0-1.23,1.11,1.64,1.64,0,0,0,.31,1.63l4.58,5.33-.8,6.83a1.7,1.7,0,0,0,.71,1.58,1.73,1.73,0,0,0,1.73.11l6-3.11,6,3.11a1.68,1.68,0,0,0,2.44-1.69l-.79-6.83,4.56-5.33a1.67,1.67,0,0,0,.33-1.63,1.7,1.7,0,0,0-1.24-1.11l-6.77-1.49-3-6h0a1.66,1.66,0,0,0-1.65-.92Zm.16,5.44,1.86,3.73h0a1.67,1.67,0,0,0,1.13.86l4.83,1.08-3.22,3.76h0a1.71,1.71,0,0,0-.4,1.3l.49,4.44-3.92-2.05h0a1.69,1.69,0,0,0-1.52,0l-3.94,2,.5-4.44a1.72,1.72,0,0,0-.39-1.29l-3.24-3.76,4.84-1.08h0a1.69,1.69,0,0,0,1.13-.86l1.86-3.73Z"/></svg>
+                        <h5>Experience</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatem laudantium nesciunt ad ut ipsa. Expedita soluta incidunt, aliquam nam necessitatibus laboriosam nulla sunt ad nobis architecto similique ratione, doloribus totam eos dolores repellendus, quis dolor dicta. Maxime velit impedit odit eum modi tempora facilis natus ea, hic enim itaque.</p>
+                </div>
+                <div class="col-md-6 home--card">
+                    <div class="header-img-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.8 74"><path class="cls-1" d="M26.92,0A22.71,22.71,0,0,0,13.37,40.92L4.28,56.27h0A1.68,1.68,0,0,0,4,57.57a1.62,1.62,0,0,0,.78,1.08,1.64,1.64,0,0,0,1.33.18,1.7,1.7,0,0,0,1-.84l9-15.29a22.47,22.47,0,0,0,21.43,0L49.19,62.24h-6.3a1.67,1.67,0,0,0-1.5.92l-2.84,5.67L28.37,52.09h0a1.68,1.68,0,0,0-1.45-.82,1.65,1.65,0,0,0-1.44.82L15.28,68.83l-2.84-5.67A1.66,1.66,0,0,0,11,62.24H1.7a1.63,1.63,0,0,0-1.2.48,1.68,1.68,0,0,0,0,2.39,1.65,1.65,0,0,0,1.2.48H9.93l3.72,7.47h0a1.71,1.71,0,0,0,1.43.94,1.67,1.67,0,0,0,1.51-.81l10.32-17,10.32,17a1.65,1.65,0,0,0,1.51.81,1.67,1.67,0,0,0,1.42-.94l3.74-7.47h8.22a1.67,1.67,0,0,0,1.44-2.54L40.48,40.92A22.72,22.72,0,0,0,26.92,0Zm0,3.36A19.35,19.35,0,1,1,7.59,22.71,19.31,19.31,0,0,1,26.92,3.36Zm-.16,5.89h0a1.66,1.66,0,0,0-1.33.92l-3,6-6.77,1.49a1.69,1.69,0,0,0-1.23,1.11,1.64,1.64,0,0,0,.31,1.63l4.58,5.33-.8,6.83a1.7,1.7,0,0,0,.71,1.58,1.73,1.73,0,0,0,1.73.11l6-3.11,6,3.11a1.68,1.68,0,0,0,2.44-1.69l-.79-6.83,4.56-5.33a1.67,1.67,0,0,0,.33-1.63,1.7,1.7,0,0,0-1.24-1.11l-6.77-1.49-3-6h0a1.66,1.66,0,0,0-1.65-.92Zm.16,5.44,1.86,3.73h0a1.67,1.67,0,0,0,1.13.86l4.83,1.08-3.22,3.76h0a1.71,1.71,0,0,0-.4,1.3l.49,4.44-3.92-2.05h0a1.69,1.69,0,0,0-1.52,0l-3.94,2,.5-4.44a1.72,1.72,0,0,0-.39-1.29l-3.24-3.76,4.84-1.08h0a1.69,1.69,0,0,0,1.13-.86l1.86-3.73Z"/></svg>
+                        <h5>Experience</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatem laudantium nesciunt ad ut ipsa. Expedita soluta incidunt, aliquam nam necessitatibus laboriosam nulla sunt ad nobis architecto similique ratione, doloribus totam eos dolores repellendus, quis dolor dicta. Maxime velit impedit odit eum modi tempora facilis natus ea, hic enim itaque.</p>
+                </div>
+                <div class="col-md-6 home--card">
+                    <div class="header-img-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.8 74"><path class="cls-1" d="M26.92,0A22.71,22.71,0,0,0,13.37,40.92L4.28,56.27h0A1.68,1.68,0,0,0,4,57.57a1.62,1.62,0,0,0,.78,1.08,1.64,1.64,0,0,0,1.33.18,1.7,1.7,0,0,0,1-.84l9-15.29a22.47,22.47,0,0,0,21.43,0L49.19,62.24h-6.3a1.67,1.67,0,0,0-1.5.92l-2.84,5.67L28.37,52.09h0a1.68,1.68,0,0,0-1.45-.82,1.65,1.65,0,0,0-1.44.82L15.28,68.83l-2.84-5.67A1.66,1.66,0,0,0,11,62.24H1.7a1.63,1.63,0,0,0-1.2.48,1.68,1.68,0,0,0,0,2.39,1.65,1.65,0,0,0,1.2.48H9.93l3.72,7.47h0a1.71,1.71,0,0,0,1.43.94,1.67,1.67,0,0,0,1.51-.81l10.32-17,10.32,17a1.65,1.65,0,0,0,1.51.81,1.67,1.67,0,0,0,1.42-.94l3.74-7.47h8.22a1.67,1.67,0,0,0,1.44-2.54L40.48,40.92A22.72,22.72,0,0,0,26.92,0Zm0,3.36A19.35,19.35,0,1,1,7.59,22.71,19.31,19.31,0,0,1,26.92,3.36Zm-.16,5.89h0a1.66,1.66,0,0,0-1.33.92l-3,6-6.77,1.49a1.69,1.69,0,0,0-1.23,1.11,1.64,1.64,0,0,0,.31,1.63l4.58,5.33-.8,6.83a1.7,1.7,0,0,0,.71,1.58,1.73,1.73,0,0,0,1.73.11l6-3.11,6,3.11a1.68,1.68,0,0,0,2.44-1.69l-.79-6.83,4.56-5.33a1.67,1.67,0,0,0,.33-1.63,1.7,1.7,0,0,0-1.24-1.11l-6.77-1.49-3-6h0a1.66,1.66,0,0,0-1.65-.92Zm.16,5.44,1.86,3.73h0a1.67,1.67,0,0,0,1.13.86l4.83,1.08-3.22,3.76h0a1.71,1.71,0,0,0-.4,1.3l.49,4.44-3.92-2.05h0a1.69,1.69,0,0,0-1.52,0l-3.94,2,.5-4.44a1.72,1.72,0,0,0-.39-1.29l-3.24-3.76,4.84-1.08h0a1.69,1.69,0,0,0,1.13-.86l1.86-3.73Z"/></svg>
+                        <h5>Experience</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatem laudantium nesciunt ad ut ipsa. Expedita soluta incidunt, aliquam nam necessitatibus laboriosam nulla sunt ad nobis architecto similique ratione, doloribus totam eos dolores repellendus, quis dolor dicta. Maxime velit impedit odit eum modi tempora facilis natus ea, hic enim itaque.</p>
+                </div>
+       
             </div>
         </div>
     </section>
@@ -307,76 +305,24 @@ get_header();
             </div>
         </div>
     </section>
-
-    <section class="fmm__section--ninth">
-        <div class="container container--content">
-            <h2><span>Why choose me as</span><br> your hypnotherapist</h2>
-            <p>My life-changed via one session of hypnotherapy on June 1st 2006. I knew then that Hypnotherapy is what I wanted to do, so I started to retrain.  After 1000hrs of training, with the best trainers and in a variety of therapies, I started working with clients full-time in 2012 and have since successfully worked with thousands of people.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci:</p>
-            <div class="row">
-                <div class="col-md-6 home--card">
-                    <div class="header-img-title">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.8 74"><path class="cls-1" d="M26.92,0A22.71,22.71,0,0,0,13.37,40.92L4.28,56.27h0A1.68,1.68,0,0,0,4,57.57a1.62,1.62,0,0,0,.78,1.08,1.64,1.64,0,0,0,1.33.18,1.7,1.7,0,0,0,1-.84l9-15.29a22.47,22.47,0,0,0,21.43,0L49.19,62.24h-6.3a1.67,1.67,0,0,0-1.5.92l-2.84,5.67L28.37,52.09h0a1.68,1.68,0,0,0-1.45-.82,1.65,1.65,0,0,0-1.44.82L15.28,68.83l-2.84-5.67A1.66,1.66,0,0,0,11,62.24H1.7a1.63,1.63,0,0,0-1.2.48,1.68,1.68,0,0,0,0,2.39,1.65,1.65,0,0,0,1.2.48H9.93l3.72,7.47h0a1.71,1.71,0,0,0,1.43.94,1.67,1.67,0,0,0,1.51-.81l10.32-17,10.32,17a1.65,1.65,0,0,0,1.51.81,1.67,1.67,0,0,0,1.42-.94l3.74-7.47h8.22a1.67,1.67,0,0,0,1.44-2.54L40.48,40.92A22.72,22.72,0,0,0,26.92,0Zm0,3.36A19.35,19.35,0,1,1,7.59,22.71,19.31,19.31,0,0,1,26.92,3.36Zm-.16,5.89h0a1.66,1.66,0,0,0-1.33.92l-3,6-6.77,1.49a1.69,1.69,0,0,0-1.23,1.11,1.64,1.64,0,0,0,.31,1.63l4.58,5.33-.8,6.83a1.7,1.7,0,0,0,.71,1.58,1.73,1.73,0,0,0,1.73.11l6-3.11,6,3.11a1.68,1.68,0,0,0,2.44-1.69l-.79-6.83,4.56-5.33a1.67,1.67,0,0,0,.33-1.63,1.7,1.7,0,0,0-1.24-1.11l-6.77-1.49-3-6h0a1.66,1.66,0,0,0-1.65-.92Zm.16,5.44,1.86,3.73h0a1.67,1.67,0,0,0,1.13.86l4.83,1.08-3.22,3.76h0a1.71,1.71,0,0,0-.4,1.3l.49,4.44-3.92-2.05h0a1.69,1.69,0,0,0-1.52,0l-3.94,2,.5-4.44a1.72,1.72,0,0,0-.39-1.29l-3.24-3.76,4.84-1.08h0a1.69,1.69,0,0,0,1.13-.86l1.86-3.73Z"/></svg>
-                        <h5>Experience</h5>
+    
+    <section class="fmm__section--seventh">
+        <div class="container-md">
+            <div class="listen__here--holder">
+                <div class="row g-0">
+                    <div class="col-5 img--holder">
+                        <img class="img-fluid" src="http://fixmymind.test/wp-content/uploads/2022/09/Kelly-Holmes.png" alt="kelly">
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatem laudantium nesciunt ad ut ipsa. Expedita soluta incidunt, aliquam nam necessitatibus laboriosam nulla sunt ad nobis architecto similique ratione, doloribus totam eos dolores repellendus, quis dolor dicta. Maxime velit impedit odit eum modi tempora facilis natus ea, hic enim itaque.</p>
-                </div>
-                <div class="col-md-6 home--card">
-                    <div class="header-img-title">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.8 74"><path class="cls-1" d="M26.92,0A22.71,22.71,0,0,0,13.37,40.92L4.28,56.27h0A1.68,1.68,0,0,0,4,57.57a1.62,1.62,0,0,0,.78,1.08,1.64,1.64,0,0,0,1.33.18,1.7,1.7,0,0,0,1-.84l9-15.29a22.47,22.47,0,0,0,21.43,0L49.19,62.24h-6.3a1.67,1.67,0,0,0-1.5.92l-2.84,5.67L28.37,52.09h0a1.68,1.68,0,0,0-1.45-.82,1.65,1.65,0,0,0-1.44.82L15.28,68.83l-2.84-5.67A1.66,1.66,0,0,0,11,62.24H1.7a1.63,1.63,0,0,0-1.2.48,1.68,1.68,0,0,0,0,2.39,1.65,1.65,0,0,0,1.2.48H9.93l3.72,7.47h0a1.71,1.71,0,0,0,1.43.94,1.67,1.67,0,0,0,1.51-.81l10.32-17,10.32,17a1.65,1.65,0,0,0,1.51.81,1.67,1.67,0,0,0,1.42-.94l3.74-7.47h8.22a1.67,1.67,0,0,0,1.44-2.54L40.48,40.92A22.72,22.72,0,0,0,26.92,0Zm0,3.36A19.35,19.35,0,1,1,7.59,22.71,19.31,19.31,0,0,1,26.92,3.36Zm-.16,5.89h0a1.66,1.66,0,0,0-1.33.92l-3,6-6.77,1.49a1.69,1.69,0,0,0-1.23,1.11,1.64,1.64,0,0,0,.31,1.63l4.58,5.33-.8,6.83a1.7,1.7,0,0,0,.71,1.58,1.73,1.73,0,0,0,1.73.11l6-3.11,6,3.11a1.68,1.68,0,0,0,2.44-1.69l-.79-6.83,4.56-5.33a1.67,1.67,0,0,0,.33-1.63,1.7,1.7,0,0,0-1.24-1.11l-6.77-1.49-3-6h0a1.66,1.66,0,0,0-1.65-.92Zm.16,5.44,1.86,3.73h0a1.67,1.67,0,0,0,1.13.86l4.83,1.08-3.22,3.76h0a1.71,1.71,0,0,0-.4,1.3l.49,4.44-3.92-2.05h0a1.69,1.69,0,0,0-1.52,0l-3.94,2,.5-4.44a1.72,1.72,0,0,0-.39-1.29l-3.24-3.76,4.84-1.08h0a1.69,1.69,0,0,0,1.13-.86l1.86-3.73Z"/></svg>
-                        <h5>Experience</h5>
+                    <div class="col-7">
+                        <div class="text--holder">
+                            <h3 class="h1">I give my experience of hypnotherapy with James <span>10/10</span></h3>
+                            <p>Dame Kelly Holmes</p>
+                            <a href="#" class="btn">Listen Here</a>
+                            <div class="icon">
+                                <img class="img-fluid" src="http://fixmymind.test/wp-content/uploads/2022/09/bbc.png" alt="radio">
+                            </div>
+                        </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatem laudantium nesciunt ad ut ipsa. Expedita soluta incidunt, aliquam nam necessitatibus laboriosam nulla sunt ad nobis architecto similique ratione, doloribus totam eos dolores repellendus, quis dolor dicta. Maxime velit impedit odit eum modi tempora facilis natus ea, hic enim itaque.</p>
-                </div>
-                <div class="col-md-6 home--card">
-                    <div class="header-img-title">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.8 74"><path class="cls-1" d="M26.92,0A22.71,22.71,0,0,0,13.37,40.92L4.28,56.27h0A1.68,1.68,0,0,0,4,57.57a1.62,1.62,0,0,0,.78,1.08,1.64,1.64,0,0,0,1.33.18,1.7,1.7,0,0,0,1-.84l9-15.29a22.47,22.47,0,0,0,21.43,0L49.19,62.24h-6.3a1.67,1.67,0,0,0-1.5.92l-2.84,5.67L28.37,52.09h0a1.68,1.68,0,0,0-1.45-.82,1.65,1.65,0,0,0-1.44.82L15.28,68.83l-2.84-5.67A1.66,1.66,0,0,0,11,62.24H1.7a1.63,1.63,0,0,0-1.2.48,1.68,1.68,0,0,0,0,2.39,1.65,1.65,0,0,0,1.2.48H9.93l3.72,7.47h0a1.71,1.71,0,0,0,1.43.94,1.67,1.67,0,0,0,1.51-.81l10.32-17,10.32,17a1.65,1.65,0,0,0,1.51.81,1.67,1.67,0,0,0,1.42-.94l3.74-7.47h8.22a1.67,1.67,0,0,0,1.44-2.54L40.48,40.92A22.72,22.72,0,0,0,26.92,0Zm0,3.36A19.35,19.35,0,1,1,7.59,22.71,19.31,19.31,0,0,1,26.92,3.36Zm-.16,5.89h0a1.66,1.66,0,0,0-1.33.92l-3,6-6.77,1.49a1.69,1.69,0,0,0-1.23,1.11,1.64,1.64,0,0,0,.31,1.63l4.58,5.33-.8,6.83a1.7,1.7,0,0,0,.71,1.58,1.73,1.73,0,0,0,1.73.11l6-3.11,6,3.11a1.68,1.68,0,0,0,2.44-1.69l-.79-6.83,4.56-5.33a1.67,1.67,0,0,0,.33-1.63,1.7,1.7,0,0,0-1.24-1.11l-6.77-1.49-3-6h0a1.66,1.66,0,0,0-1.65-.92Zm.16,5.44,1.86,3.73h0a1.67,1.67,0,0,0,1.13.86l4.83,1.08-3.22,3.76h0a1.71,1.71,0,0,0-.4,1.3l.49,4.44-3.92-2.05h0a1.69,1.69,0,0,0-1.52,0l-3.94,2,.5-4.44a1.72,1.72,0,0,0-.39-1.29l-3.24-3.76,4.84-1.08h0a1.69,1.69,0,0,0,1.13-.86l1.86-3.73Z"/></svg>
-                        <h5>Experience</h5>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatem laudantium nesciunt ad ut ipsa. Expedita soluta incidunt, aliquam nam necessitatibus laboriosam nulla sunt ad nobis architecto similique ratione, doloribus totam eos dolores repellendus, quis dolor dicta. Maxime velit impedit odit eum modi tempora facilis natus ea, hic enim itaque.</p>
-                </div>
-                <div class="col-md-6 home--card">
-                    <div class="header-img-title">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.8 74"><path class="cls-1" d="M26.92,0A22.71,22.71,0,0,0,13.37,40.92L4.28,56.27h0A1.68,1.68,0,0,0,4,57.57a1.62,1.62,0,0,0,.78,1.08,1.64,1.64,0,0,0,1.33.18,1.7,1.7,0,0,0,1-.84l9-15.29a22.47,22.47,0,0,0,21.43,0L49.19,62.24h-6.3a1.67,1.67,0,0,0-1.5.92l-2.84,5.67L28.37,52.09h0a1.68,1.68,0,0,0-1.45-.82,1.65,1.65,0,0,0-1.44.82L15.28,68.83l-2.84-5.67A1.66,1.66,0,0,0,11,62.24H1.7a1.63,1.63,0,0,0-1.2.48,1.68,1.68,0,0,0,0,2.39,1.65,1.65,0,0,0,1.2.48H9.93l3.72,7.47h0a1.71,1.71,0,0,0,1.43.94,1.67,1.67,0,0,0,1.51-.81l10.32-17,10.32,17a1.65,1.65,0,0,0,1.51.81,1.67,1.67,0,0,0,1.42-.94l3.74-7.47h8.22a1.67,1.67,0,0,0,1.44-2.54L40.48,40.92A22.72,22.72,0,0,0,26.92,0Zm0,3.36A19.35,19.35,0,1,1,7.59,22.71,19.31,19.31,0,0,1,26.92,3.36Zm-.16,5.89h0a1.66,1.66,0,0,0-1.33.92l-3,6-6.77,1.49a1.69,1.69,0,0,0-1.23,1.11,1.64,1.64,0,0,0,.31,1.63l4.58,5.33-.8,6.83a1.7,1.7,0,0,0,.71,1.58,1.73,1.73,0,0,0,1.73.11l6-3.11,6,3.11a1.68,1.68,0,0,0,2.44-1.69l-.79-6.83,4.56-5.33a1.67,1.67,0,0,0,.33-1.63,1.7,1.7,0,0,0-1.24-1.11l-6.77-1.49-3-6h0a1.66,1.66,0,0,0-1.65-.92Zm.16,5.44,1.86,3.73h0a1.67,1.67,0,0,0,1.13.86l4.83,1.08-3.22,3.76h0a1.71,1.71,0,0,0-.4,1.3l.49,4.44-3.92-2.05h0a1.69,1.69,0,0,0-1.52,0l-3.94,2,.5-4.44a1.72,1.72,0,0,0-.39-1.29l-3.24-3.76,4.84-1.08h0a1.69,1.69,0,0,0,1.13-.86l1.86-3.73Z"/></svg>
-                        <h5>Experience</h5>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatem laudantium nesciunt ad ut ipsa. Expedita soluta incidunt, aliquam nam necessitatibus laboriosam nulla sunt ad nobis architecto similique ratione, doloribus totam eos dolores repellendus, quis dolor dicta. Maxime velit impedit odit eum modi tempora facilis natus ea, hic enim itaque.</p>
-                </div>
-                <div class="col-md-6 home--card">
-                    <div class="header-img-title">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.8 74"><path class="cls-1" d="M26.92,0A22.71,22.71,0,0,0,13.37,40.92L4.28,56.27h0A1.68,1.68,0,0,0,4,57.57a1.62,1.62,0,0,0,.78,1.08,1.64,1.64,0,0,0,1.33.18,1.7,1.7,0,0,0,1-.84l9-15.29a22.47,22.47,0,0,0,21.43,0L49.19,62.24h-6.3a1.67,1.67,0,0,0-1.5.92l-2.84,5.67L28.37,52.09h0a1.68,1.68,0,0,0-1.45-.82,1.65,1.65,0,0,0-1.44.82L15.28,68.83l-2.84-5.67A1.66,1.66,0,0,0,11,62.24H1.7a1.63,1.63,0,0,0-1.2.48,1.68,1.68,0,0,0,0,2.39,1.65,1.65,0,0,0,1.2.48H9.93l3.72,7.47h0a1.71,1.71,0,0,0,1.43.94,1.67,1.67,0,0,0,1.51-.81l10.32-17,10.32,17a1.65,1.65,0,0,0,1.51.81,1.67,1.67,0,0,0,1.42-.94l3.74-7.47h8.22a1.67,1.67,0,0,0,1.44-2.54L40.48,40.92A22.72,22.72,0,0,0,26.92,0Zm0,3.36A19.35,19.35,0,1,1,7.59,22.71,19.31,19.31,0,0,1,26.92,3.36Zm-.16,5.89h0a1.66,1.66,0,0,0-1.33.92l-3,6-6.77,1.49a1.69,1.69,0,0,0-1.23,1.11,1.64,1.64,0,0,0,.31,1.63l4.58,5.33-.8,6.83a1.7,1.7,0,0,0,.71,1.58,1.73,1.73,0,0,0,1.73.11l6-3.11,6,3.11a1.68,1.68,0,0,0,2.44-1.69l-.79-6.83,4.56-5.33a1.67,1.67,0,0,0,.33-1.63,1.7,1.7,0,0,0-1.24-1.11l-6.77-1.49-3-6h0a1.66,1.66,0,0,0-1.65-.92Zm.16,5.44,1.86,3.73h0a1.67,1.67,0,0,0,1.13.86l4.83,1.08-3.22,3.76h0a1.71,1.71,0,0,0-.4,1.3l.49,4.44-3.92-2.05h0a1.69,1.69,0,0,0-1.52,0l-3.94,2,.5-4.44a1.72,1.72,0,0,0-.39-1.29l-3.24-3.76,4.84-1.08h0a1.69,1.69,0,0,0,1.13-.86l1.86-3.73Z"/></svg>
-                        <h5>Experience</h5>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatem laudantium nesciunt ad ut ipsa. Expedita soluta incidunt, aliquam nam necessitatibus laboriosam nulla sunt ad nobis architecto similique ratione, doloribus totam eos dolores repellendus, quis dolor dicta. Maxime velit impedit odit eum modi tempora facilis natus ea, hic enim itaque.</p>
-                </div>
-                <div class="col-md-6 home--card">
-                    <div class="header-img-title">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.8 74"><path class="cls-1" d="M26.92,0A22.71,22.71,0,0,0,13.37,40.92L4.28,56.27h0A1.68,1.68,0,0,0,4,57.57a1.62,1.62,0,0,0,.78,1.08,1.64,1.64,0,0,0,1.33.18,1.7,1.7,0,0,0,1-.84l9-15.29a22.47,22.47,0,0,0,21.43,0L49.19,62.24h-6.3a1.67,1.67,0,0,0-1.5.92l-2.84,5.67L28.37,52.09h0a1.68,1.68,0,0,0-1.45-.82,1.65,1.65,0,0,0-1.44.82L15.28,68.83l-2.84-5.67A1.66,1.66,0,0,0,11,62.24H1.7a1.63,1.63,0,0,0-1.2.48,1.68,1.68,0,0,0,0,2.39,1.65,1.65,0,0,0,1.2.48H9.93l3.72,7.47h0a1.71,1.71,0,0,0,1.43.94,1.67,1.67,0,0,0,1.51-.81l10.32-17,10.32,17a1.65,1.65,0,0,0,1.51.81,1.67,1.67,0,0,0,1.42-.94l3.74-7.47h8.22a1.67,1.67,0,0,0,1.44-2.54L40.48,40.92A22.72,22.72,0,0,0,26.92,0Zm0,3.36A19.35,19.35,0,1,1,7.59,22.71,19.31,19.31,0,0,1,26.92,3.36Zm-.16,5.89h0a1.66,1.66,0,0,0-1.33.92l-3,6-6.77,1.49a1.69,1.69,0,0,0-1.23,1.11,1.64,1.64,0,0,0,.31,1.63l4.58,5.33-.8,6.83a1.7,1.7,0,0,0,.71,1.58,1.73,1.73,0,0,0,1.73.11l6-3.11,6,3.11a1.68,1.68,0,0,0,2.44-1.69l-.79-6.83,4.56-5.33a1.67,1.67,0,0,0,.33-1.63,1.7,1.7,0,0,0-1.24-1.11l-6.77-1.49-3-6h0a1.66,1.66,0,0,0-1.65-.92Zm.16,5.44,1.86,3.73h0a1.67,1.67,0,0,0,1.13.86l4.83,1.08-3.22,3.76h0a1.71,1.71,0,0,0-.4,1.3l.49,4.44-3.92-2.05h0a1.69,1.69,0,0,0-1.52,0l-3.94,2,.5-4.44a1.72,1.72,0,0,0-.39-1.29l-3.24-3.76,4.84-1.08h0a1.69,1.69,0,0,0,1.13-.86l1.86-3.73Z"/></svg>
-                        <h5>Experience</h5>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatem laudantium nesciunt ad ut ipsa. Expedita soluta incidunt, aliquam nam necessitatibus laboriosam nulla sunt ad nobis architecto similique ratione, doloribus totam eos dolores repellendus, quis dolor dicta. Maxime velit impedit odit eum modi tempora facilis natus ea, hic enim itaque.</p>
-                </div>
-       
-            </div>
-        </div>
-    </section>
-
-    <section class="fmm__section--twelfth">
-        <div class="testimonial-bg"></div>
-        <div class="container cont-testimonial">
-            <h3 class="h1">Testimonial</h3>
-            <div class="testimonial--holder">
-                <div class="quote-up"></div>
-                <div class="quote-down"></div>
-                <p>I contacted James as I felt I had some barriers that were inhibiting my performance. I wanted to eliminate them.</p>
-                <p>I’ve had experience of performance coaching, (and do coach others myself), but I knew I needed to go deeper as I was aware that “something” was in the way.</p>
-                <p>James very quickly helped me understand what this was; within a few minutes it was clear to him that my issue stemmed from being made redundant from a role I loved. At this point it became very clear to me too - I was surprised at how physically I felt about this and I was not even aware it was taking a strong hold in me. James guided me through his techniques to remove it. Amazingly this was achieved over zoom – actually on the 1st session. The negative feelings around it went, and I am pleased to say have not returned.</p>
-                <p>This freed me up to work on other areas where focus and change was required. James helped me achieve clarity and direction and an improved mindset.</p>
-                <p>I have already recommended James to others; they too have had a great outcome. *</p>
-                <div class="testimonial--footer">
-                    <h6>Martin Hurworth</h6>
-                    <p>August 23rd 2021</p>
-                    <div class="c--reviews__stars">★★★★★</div>
                 </div>
             </div>
         </div>
