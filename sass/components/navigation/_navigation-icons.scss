@@ -1,0 +1,91 @@
+#navbarNavDropdown {
+    #primary-menu {
+        >.menu-item {
+            >.dropdown-menu {
+                >.menu-item {
+                    // icons
+                    &.hypnotherapy {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/online-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/online.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.o-anxiety {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/brain-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/brain.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.fop-speaking {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/community-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/community.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.p-attacks {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/full-heart-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/full-heart.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.p-cure {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/danger-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/danger.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.s-smoking {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/cigarette-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/cigarette.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.insomnia {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/noise-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/noise.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.b-confidence {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/angry-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/angry.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

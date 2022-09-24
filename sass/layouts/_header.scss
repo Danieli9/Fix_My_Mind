@@ -1,0 +1,101 @@
+.header {
+    padding-top: 20px;
+    @media (min-width: 992px) {
+        padding-top: 150px;
+    }
+    position: relative;
+    background: linear-gradient(120deg, rgba(0, 54 ,163, 0.6) 60%, rgba(0, 54 ,163, 0.3) 100%);
+    .header--bg {
+        background-image: url(images/pattern.png);
+        background-size: cover;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .container-xxl {
+        padding-left: 0;
+        padding-right: 0;
+        overflow: hidden;
+        .header--row {
+            position: relative;
+            max-height: 705px;
+            background: linear-gradient(180deg, rgba(78,122,209,0) 75%, rgba(78, 122, 209,1) 75%);
+            @media (min-width: 500px) {
+                max-height: 785px;
+            }
+            @media (min-width: 576px) {
+                max-height: 835px;
+            }
+            @media (min-width: 992px) {
+                background: initial;
+                max-height: initial;
+                position: initial;
+            }
+            .header--text__holder {
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                padding-right: 20px;
+                position: relative;
+                bottom: 150px;
+                background: linear-gradient(180deg, rgba(78,122,209,0) 0%, rgba(78,122,209,1) 54%);
+                @media (min-width: 576px) {
+                    padding-left: 80px;
+                    padding-right: 80px;
+                }
+                @media (min-width: 992px) {
+                    background: initial;
+                    position: initial;
+                    bottom: initial;
+                }
+                @media (min-width: 1400px) {
+                    padding: 0 12px;
+                }
+                .header--left__text {
+                    .header--h1 {
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: $theme__white;
+                        text-align: center;
+                        margin-bottom: 15px;
+                        @include fluid-type(420px, 1440px, 21px, 58px);
+                        @media (min-width: 992px) {
+                            text-align: left;
+                            margin-bottom: 35px;
+                        }
+                    }
+                    .header--p {
+                        color: $theme__white;
+                        margin-bottom: 20px;
+                        font-size: 20px;
+                        text-align: center;
+                        @media (min-width: 992px) {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+
+            .header--image__holder {
+                padding-left: 20px;
+                padding-right: 20px;
+                display: flex;
+                justify-content: center;
+                @media (min-width: 1200px) {
+                    padding: 0;
+                }
+                .header--right__img {
+                    min-width: 380px;
+                    @media (min-width: 992px) {
+                        min-width: initial;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

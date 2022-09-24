@@ -1,170 +1,50 @@
-body {
-	&.remove_top_menu {
-		#masthead {
-			#site-navigation {
-				transform: translateY(-100%);
-			}
-		}
-	}
-}
-
-#masthead {
+.site-header {
 	background-color: transparent;
-	position: fixed;
+	position: relative;
     width: 100%;
 	z-index: 10;
-	#site-navigation {
+	transition: $transition__transform;
+	@media (min-width: 992px) {
+		position: fixed;
+	}
+	.navbar {
+		&.is-active {
+			padding-bottom: 0px;
+		}
 		transform: translateY(0%);
-		transition: transform .4s ease !important;
+		transition: $transition__transform;
 		padding-top: 20px;
 		padding-bottom: 20px;
+		background-color: #5483E0;
 		@media (min-width: 768px) {
 			padding-top: 1px;
 			padding-bottom: 1px;
 		}
-		.site-branding {
-			a {
-				img {
-					width: 165px;
-					@media (min-width: 576px) {
-						width: 250px;
-					}
-					
-				}
-			}
+		@media (min-width: 992px) {
+			background-color: transparent;
 		}
-		#navbarNavDropdown {
-			#primary-menu {
-				>.menu-item {
-					position: relative;
-					>.nav-link {
-						color: $theme__white;
-						padding-top: 30px;
-						padding-bottom: 30px;
-						font-size: 18px;
-					}
-					// fist level
-					>.dropdown-menu {
-						background-color: $theme__white;
-						border-radius: 0;
-    					border: 0px;
-						top: 100%;
-						width: 300px;
-						padding: 0;
-						>.menu-item {
-							position: initial;
-							padding-top: 9px;
-							padding-bottom: 9px;
-							padding-left: 55px;
-							border-bottom: 1px solid $theme__white_darker;
-							&:last-child {
-								border-bottom: 1px solid transparent;
-							}
-							&:hover {
-								background-color: $theme__white_darker;
-							}
-							>.dropdown-item {
-								color: #394B70;
-								font-weight: 600;
-								padding: 0;
-								position: relative;
-								&:hover {
-									background-color: $theme__white_darker;
-								}
-								&::before {
-									position: absolute;
-									content: '';
-									width: 26px;
-									height: 26px;
-									top: 3px;
-									left: -45px;
-								}
-						
-							}
-							// icons
-							&.hypnotherapy {
-								.dropdown-item {
-									&::before {
-										background: url(icon/online.svg) no-repeat;
-									}
-								}
-							}
-							&.o-anxiety {
-								.dropdown-item {
-									&::before {
-										background: url(icon/brain.svg) no-repeat;
-									}
-								}
-							}
-							&.fop-speaking {
-								.dropdown-item {
-									&::before {
-										background: url(icon/community.svg) no-repeat;
-									}
-								}
-							}
-							&.p-attacks {
-								.dropdown-item {
-									&::before {
-										background: url(icon/full-heart.svg) no-repeat;
-									}
-								}
-							}
-							&.p-cure {
-								.dropdown-item {
-									&::before {
-										background: url(icon/danger.svg) no-repeat;
-									}
-								}
-							}
-							&.s-smoking {
-								.dropdown-item {
-									&::before {
-										background: url(icon/cigarette.svg) no-repeat;
-									}
-								}
-							}
-							&.insomnia {
-								.dropdown-item {
-									&::before {
-										background: url(icon/noise.svg) no-repeat;
-									}
-								}
-							}
-							&.b-confidence {
-								.dropdown-item {
-									&::before {
-										background: url(icon/angry.svg) no-repeat;
-									}
-								}
-							}
-
-							// second level
-							>.dropdown-menu {
-								background-color: $theme__white_darker;
-								top: 0;
-								width: 180px;
-								left: 300px;
-								border: 0;
-								border-radius: 0;
-								height: 100%;
-								padding: 0;
-								>.menu-item {
-									>.dropdown-item {
-										border-bottom: 1px solid $theme__white;
-										padding: 9px 10px;
-									}
-								}
-							}
-				
+		.not-padding-mobile {
+			padding: 0px;
+			.site-branding {
+				padding-left: 20px;
+				a {
+					img {
+						width: 165px;
+						@media (min-width: 576px) {
+							width: 250px;
 						}
+						
 					}
 				}
 			}
+			.navbar-toggler {
+				padding-right: 20px;
+			}
+			// navbarNavDropdown inside navigatopm-submenu.scss
 		}
+
 	}
 }
-
 .header--row {
 	.header--text__holder {
 		display: flex;

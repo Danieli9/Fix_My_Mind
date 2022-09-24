@@ -144,6 +144,8 @@ function _s_scripts() {
 
 	$jquery_cdn = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
 	wp_enqueue_script( 'fmm-jquery', $jquery_cdn, array(), _S_VERSION, true );
+	$bootstrap_cdn = 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js';
+	// wp_enqueue_script( 'fmm-bootstrap', $bootstrap_cdn, array(), _S_VERSION, true );
 	wp_enqueue_script( 'fmm-swiper-bundle.min.js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'fmm-main', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true );
 

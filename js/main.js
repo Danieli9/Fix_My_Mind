@@ -113,5 +113,78 @@ document.addEventListener("DOMContentLoaded", function(){
 	}
 	}
 	removeTopMenu();
+
+	function mobileMenu() {
+		(function($) {
+
+			if (window.innerWidth < 992) {
+
+				// Toggle the mobile menu visibility, active class and change button text
+				$(".navbar-toggler").click( function(event) {
+					event.preventDefault();
+					$(".navbar-collapse").slideToggle();
+					$(this).toggleClass('is-active');
+					$(".navbar ").toggleClass('is-active');
+			
+					if ( $(this).hasClass('is-active') ) {
+						$(this).addClass('close');
+						$(this).removeClass('open');
+					}
+					else
+					{
+						$(this).removeClass('close');
+						$(this).addClass('open');
+					}
+				});
+				$(".menu-item").click( function(event) {
+					var parent = $(this).closest('a');
+					var parents = $(this).closest('.menu-item');
+					$(parent).find('> .dropdown-menu').toggleClass('show');
+					$(parents).find('> .nav-link').addClass('show');
+			
+				});
+
+				$(".have_dropdown > a").on('click touchend', function(event){
+					event.preventDefault();
+
+					var parent = $(this).closest('li');
+			
+					if ( ! $(parent).find('> .dropdown-menu').hasClass('show') ) {
+
+						// hasn't been clicked yet — open
+						$(parent).find('> .dropdown-menu').toggleClass('show');
+						$(parent).toggleClass('borders');
+						// $(parent).find('> .c-mobile-nav__sub-indicator').toggleClass('show');
+					} else {
+						// has already been expanded — redirect to href
+						window.location = this.href;
+					}
+				});
+				
+
+			}
+			// make it as accordion for bigger screens
+		})(jQuery);
+	}
+	mobileMenu();
+
+	function filter() {
+		(function($) {
+			$('#post_filters_cat').on('change', function () {
+				var url = $(this).val(); // get selected value
+				if (url) { // require a URL
+					window.location = url; // redirect
+				}
+				return false;
+			});
+		})(jQuery);
+	}
+	filter();
 }); 
 // DOMContentLoaded  end
+
+
+
+
+
+

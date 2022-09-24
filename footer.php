@@ -70,7 +70,6 @@
 		</div><!-- .container -->
 	</footer><!-- #fix-my--mind__footer -->
 </div><!-- #page -->
-
 <?php wp_footer(); ?>
 
 </body>

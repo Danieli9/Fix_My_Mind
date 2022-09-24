@@ -34,7 +34,7 @@ get_header();
             <div class="row">
                 <div class="col-lg-2">
                     <div class="review--holder">
-                        <img src="http://fixmymind.test/wp-content/uploads/2022/09/google-logo.png.webp" alt="google">
+                        <img src="<?= get_template_directory_uri(); ?>/css/images/google-logo.png.webp" alt="google">
                         <div class="review--score">
                             <p>4.6</p>
                             <div class="reviews-stars">★★★★★</div>

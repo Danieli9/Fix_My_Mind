@@ -22,7 +22,10 @@
 }
 
 .site-main {
-	padding-top: 120px;
+	padding-top: 30px;
+    @media (min-width: 992px) {
+        padding-top: 120px;
+    }
 	background-color: #f3f8fb;
 	@media (min-width: 768px) {
 		padding-top: 200px;
@@ -37,4 +40,252 @@
 		}
 	}
 
+}
+
+// Fix my mind blocks
+.fmm__section {
+    
+    &--blog {
+        background-color: #F3F8FB;
+        padding-bottom: 70px;
+        h1,h2 {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 40px;
+            margin-top: 40px;
+            @media (min-width: 576px) {
+                margin-bottom: 90px;
+            }
+            br {
+                display: none;
+                @media (min-width: 576px) {
+                    display: initial;
+                }
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                transform: translateX(-50%);
+                left: 50%;
+                bottom: -20px;
+                width: 67px;
+                height: 3px;
+                background-color: #243f6a;
+                @media (min-width: 576px) {
+                    width: 180px;
+                    height: 4px;
+                    bottom: -40px;
+                }
+            }
+        }
+        .subheader {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .blog-article {
+            padding: 15px;
+            article {
+                height: 100%;
+                .article--holder{
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #FEFEFE;
+                    border-radius: 20px;
+                    padding: 20px;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 220px;
+                        object-fit: cover;
+                        border-radius: 20px;
+                        min-height: 220px;
+                    }
+                    .content--holder {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 100%;
+                        .entry-content {
+                            color: #384A6F;
+                            h2 {
+                                font-size: 22px;
+                                text-align: left;
+                                margin-bottom: 10px;
+                                margin-top: 10px;
+                                &::after {
+                                    display: none;
+                                }
+                            } 
+                        }
+                        .btn {
+                            border-radius: 15px;
+                            padding: 10px 20px;
+                            width: fit-content;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                }
+            }
+        }
+        .btn {
+            display: flex;
+            width: fit-content;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 15px;
+            background-color: #5584E0;
+        }
+        .blog--form {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 5px;
+            select {
+                padding: 10px 40px 10px 10px;
+                font-weight: 800;
+                border-radius: 10px;
+                color: #3B4A71;
+                font-size: 18px;
+                background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #FEFEFE;
+                background-position-x: 95%;
+                -webkit-appearance: none;
+            }
+        }
+        #loading--indicator {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            min-height: 44px;
+            color: #3b4a71;
+            font-size: 18px;
+            font-weight: 800;
+            opacity: 0;
+            transition: opacity 0.6s ease;            
+            &.show {
+                opacity: 1;
+            }
+        }
+    }
+    &--single {
+        .single__blog--wrapper {
+            background-color: #F3F8FB;
+            .container--blog {
+                max-width: 710px;
+                .header--navigation {
+                    display: flex;
+                    width: 250px;
+                    justify-content: space-between;
+                    font-size: 18px;
+                    margin: auto;
+                    padding-top: 50px;
+                    p {
+                        margin-bottom: 0;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #243f6a;
+                    }
+                }
+                .entry-header {
+                    .entry-title {
+                        text-align: center;
+                        text-align: center;
+                        font-weight: 600;
+                        margin-bottom: 40px;
+                        @media (min-width: 576px) {
+                            margin-bottom: 90px;
+                        }
+                        br {
+                            display: none;
+                            @media (min-width: 576px) {
+                                display: initial;
+                            }
+                        }
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            transform: translateX(-50%);
+                            left: 50%;
+                            bottom: -20px;
+                            width: 67px;
+                            height: 3px;
+                            background-color: #243f6a;
+                            @media (min-width: 576px) {
+                                width: 180px;
+                                height: 4px;
+                                bottom: -40px;
+                            }
+                        }
+                    }
+                }
+                .post-thumbnail {
+                    img {
+                        width: 100%;
+                        border-radius: 20px;
+                    }
+                }
+                .entry-content {
+                    h2 {
+                        font-size: 36px;
+                    }
+                }
+                .entry-footer {
+                    border-top: 1px solid #384B6C;
+                    display: flex;
+                    padding-top: 20px;
+                    padding-bottom: 50px;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    text-align: center;
+                    @media (min-width: 576px) {
+                        flex-direction: row;
+                        text-align: left;
+                    }
+                 
+                    p {
+                        margin-bottom: 20px;
+                        font-weight: bold;
+                        font-size: 21px;
+                        line-height: 2;
+                        @media (min-width: 576px) {
+                            margin-bottom: 0;
+                        }
+                    }
+                    .blog__social--icons {
+                        margin-left: 0px;
+                        padding-left: 0px;
+                        margin-bottom: 0px;
+                        list-style-type: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 0px;
+                        li {
+                            width: 40px;
+                            margin: 0 10px;
+                            &:first-child,
+                            &:last-child {
+                                a {
+                                    svg {
+                                        max-height: 35px;
+                                    }
+                                }
+                    
+                            }
+                            a {
+                                height: 40px;
+                                width: 40px;
+                                position: relative;
+                                svg {
+                                    fill: #5584E0;
+                                    width: 40px;
+                                    height: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

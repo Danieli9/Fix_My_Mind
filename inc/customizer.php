@@ -173,3 +173,91 @@ function register_post_types() {
 
 }
 register_post_types();
+
+
+add_action( 'admin_init', 'hide_editor' );
+
+function hide_editor() {
+	// Get the Post ID.
+	$post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+	if( !isset( $post_id ) ) return;
+
+	// Get the name of the Page Template file.
+	$template_file = get_post_meta($post_id, '_wp_page_template', true);
+    
+    if($template_file == 'page-templates/home-template.php'){ // edit the template name
+    	remove_post_type_support('page', 'editor');
+    }
+    if($template_file == 'page-templates/treatments-template.php'){ // edit the template name
+    	remove_post_type_support('page', 'editor');
+    }
+    if($template_file == 'page-templates/treatments-single.php'){ // edit the template name
+    	remove_post_type_support('page', 'editor');
+    }
+
+}
+
+function override_mce_options($initArray) {
+    $opts = '*[*]';
+    $initArray['valid_elements'] = $opts;
+    $initArray['extended_valid_elements'] = $opts;
+    return $initArray;
+} add_filter('tiny_mce_before_init', 'override_mce_options');
+
+
+// Excerpt Length Control
+function set_excerpt_length(){
+	return 32;
+}
+  
+add_filter('excerpt_length', 'set_excerpt_length');
+  
+function new_excerpt_more( $more ) {
+	return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+
+
+// -------------------------------------------------------------------------
+
+/*FUNCTION FILTER AND AJAX LOAD MORE*/
+add_action( 'wp_enqueue_scripts', 'cc_script_and_styles');
+
+function cc_script_and_styles() {
+	if ( is_home() || is_archive()) {
+		global $wp_query;
+		wp_register_script( 'cc_scripts', get_stylesheet_directory_uri() . '/js/script.js', array('jquery') );
+		wp_localize_script( 'cc_scripts', 'cc_loadmore_params', array(
+			'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
+			'posts' => json_encode( $wp_query->query_vars ), // everything about your loop is here
+			'current_page' => $wp_query->query_vars['paged'] ? $wp_query->query_vars['paged'] : 1,
+			'max_page' => $wp_query->max_num_pages
+		) );
+
+		wp_enqueue_script( 'cc_scripts' );
+	}
+
+}
+
+add_action('wp_ajax_loadmorebutton', 'cc_loadmore_ajax_handler');
+add_action('wp_ajax_nopriv_loadmorebutton', 'cc_loadmore_ajax_handler');
+
+function cc_loadmore_ajax_handler(){
+	$params = json_decode( stripslashes( $_POST['query'] ), true ); 
+	$params['paged'] = $_POST['page'] + 1; 
+	$params['post_status'] = 'publish';
+	query_posts( $params );
+
+	if( have_posts() ) :
+
+		while( have_posts() ): the_post();
+
+		get_template_part( 'template-parts/content', 'archive' );
+
+		endwhile;
+
+	endif;
+
+	die; 
+}

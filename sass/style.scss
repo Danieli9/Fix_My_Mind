@@ -25,13 +25,13 @@
 @import "base/base";
 
 /* Layouts */
+@import "layouts/header";
 @import "layouts/home";
-@import "layouts/testimonials";
+@import "layouts/other-pages";
 @import "layouts/footer";
 
 /* Components */
 @import "components/components";
-
 
 /* Accessibility */
 @import "utilities/accessibility";

@@ -167,7 +167,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 
 			// Add .dropdown or .active classes where they are needed.
 			if ( $this->has_children ) {
-				$classes[] = 'dropdown';
+				$classes[] = 'dropdown have_dropdown';
 			}
 			if ( in_array( 'current-menu-item', $classes, true ) || in_array( 'current-menu-parent', $classes, true ) ) {
 				$classes[] = 'active';

@@ -30,7 +30,7 @@
 	<header id="masthead" class="site-header">
 
 		<nav id="site-navigation" class="navbar navbar-expand-lg navbar-dark bg-transparent">
-			<div class="container">
+			<div class="container not-padding-mobile">
 				<div class="site-branding">
 					<?php
 					the_custom_logo(); ?>
