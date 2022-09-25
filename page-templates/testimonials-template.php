@@ -157,19 +157,19 @@ get_header();
             <p class="p__under">Arrange your free consultation to see how Hypnotherapy can help you, and get a free ‘Accelerated Relaxation Programme’ worth £17.99</p>
             <div class="row">
                 <div class="col-xl-8 img--holder">
-                    <img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/accelerated-relaxation-program.png?id=9c7e9ba091b76db05165" alt="">
+                    <img class="img-fluid" src="<?= get_template_directory_uri(); ?>/css/images/accelerated-relaxation-program.webp" alt="mobile phone">
                     <div class="features">
                         <ul>
                             <li>
-                                <img src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/check.svg?id=e2f7d77b3841eba35af4" alt="">
+                                <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
                                 <p>FREE 20 minute consultation</p>
                             </li>
                             <li>
-                                <img src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/check.svg?id=e2f7d77b3841eba35af4" alt="">
+                                <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
                                 <p>FREE 2 hour audio, worth £17.99</p>
                             </li>
                             <li>
-                                <img src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/check.svg?id=e2f7d77b3841eba35af4" alt="">
+                                <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
                                 <p>10% discount on all treatments</p>
                             </li>
                         </ul>

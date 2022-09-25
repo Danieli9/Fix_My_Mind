@@ -194,6 +194,9 @@ function hide_editor() {
     if($template_file == 'page-templates/treatments-single.php'){ // edit the template name
     	remove_post_type_support('page', 'editor');
     }
+    if($template_file == 'page-templates/therapies-template.php'){ // edit the template name
+    	remove_post_type_support('page', 'editor');
+    }
 
 }
 
@@ -261,3 +264,117 @@ function cc_loadmore_ajax_handler(){
 
 	die; 
 }
+
+// backend fields
+add_action('admin_head', 'my_custom_fonts');
+
+function my_custom_fonts() {
+  echo '
+	<style>
+		#acf-group_632a6d9808288 .postbox-header {
+			background: rgba(0, 54, 163, 0.3);
+		}
+		#acf-group_632a7812cb27f .postbox-header {
+			background: #f3f8fb;
+		}
+
+		#acf-group_632bcad972a3a .postbox-header {
+			background: #FEFEFE;
+		}
+		#acf-group_632b83537909e .postbox-header {
+			background: #FEFEFE;
+		}
+		#acf-group_632b9c3600fb3 .postbox-header {
+			background: #FEFEFE;
+		}
+
+		#acf-group_632b8638a7dc0 .postbox-header {
+			background: #5483e0;
+		}
+
+
+
+
+		#acf-group_632bc82c46ac1 .postbox-header {
+			background: #e2efff;
+		}
+		#acf-group_632b963fb15ce .postbox-header {
+			background: #e2efff;
+		}
+		#acf-group_632b9e8041b46 .postbox-header {
+			background: rgba(171,199,210,.7);
+		}
+		#acf-group_633090b4095a5 .postbox-header {
+			background: rgba(171,199,210,.7);
+		}
+		#acf-group_632b9b53bbff3 .postbox-header {
+			background: #5483e0;
+		}
+	</style>
+  ';
+}
+
+
+function stop_smoking_table() {
+	return '
+<!-- Stop Smoking Shortcode - Start -->
+<div class="c-stop-smoking">
+  <div class="c-stop-smoking__title">
+    <i class="c-icon c-icon--money u-margin-bottom-small"></i>
+    <h4 class="c-stop-smoking__heading">How much will you save?</h4>
+  </div>
+  <div class="c-stop-smoking__header">
+    <div class="o-layout">
+      <div class="o-layout__item u-1/2">10 / day</div>
+      <div class="o-layout__item u-1/2 u-text-align-right">20 / day</div>
+    </div>
+  </div>
+  <div class="c-stop-smoking__body">
+    <div class="c-stop-smoking__row">
+      <div class="c-stop-smoking__row__title">Every week</div><!--
+   --><div class="c-stop-smoking__row__item">£37</div><!--
+   --><div class="c-stop-smoking__row__item">£68</div>
+    </div>
+    <div class="c-stop-smoking__row">
+      <div class="c-stop-smoking__row__title">Every month</div><!--
+   --><div class="c-stop-smoking__row__item">£148</div><!--
+   --><div class="c-stop-smoking__row__item">£270</div>
+    </div>
+    <div class="c-stop-smoking__row">
+      <div class="c-stop-smoking__row__title">Every 6 months</div><!--
+   --><div class="c-stop-smoking__row__item">£890</div><!--
+   --><div class="c-stop-smoking__row__item">£1,756</div>
+    </div>
+    <div class="c-stop-smoking__row">
+      <div class="c-stop-smoking__row__title">Every year</div><!--
+   --><div class="c-stop-smoking__row__item">£1,781</div><!--
+   --><div class="c-stop-smoking__row__item">£3,513</div>
+    </div>
+    <div class="c-stop-smoking__row">
+      <div class="c-stop-smoking__row__title">Every 5 years</div><!--
+   --><div class="c-stop-smoking__row__item">£8,904</div><!--
+   --><div class="c-stop-smoking__row__item">£17,563</div>
+    </div>
+    <div class="c-stop-smoking__row">
+      <div class="c-stop-smoking__row__title">Every 10 years</div><!--
+   --><div class="c-stop-smoking__row__item">£17,808</div><!--
+   --><div class="c-stop-smoking__row__item">£35,126</div>
+    </div>
+    <div class="c-stop-smoking__row">
+      <div class="c-stop-smoking__row__title">Every 20 years</div><!--
+   --><div class="c-stop-smoking__row__item">£35,616</div><!--
+   --><div class="c-stop-smoking__row__item">£70,252</div>
+    </div>
+  </div>
+</div>
+<!-- Stop Smoking Shortcode - End -->
+	
+	
+	
+	
+	
+	
+	';
+}
+
+add_shortcode( 'stop_smoking', 'stop_smoking_table' );

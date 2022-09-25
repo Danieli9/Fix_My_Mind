@@ -18,7 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
 	<!-- CSS only -->
 	<?php wp_head(); ?>
 </head>
@@ -37,7 +37,9 @@
 				</div><!-- .site-branding -->
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="primary-menu" aria-expanded="false" aria-label="navbarNavDropdown">
-					<span class="navbar-toggler-icon"></span>
+					<span></span>
+					<span></span>
+					<span></span>
 				</button>
 				<?php
 				wp_nav_menu(

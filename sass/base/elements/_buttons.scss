@@ -25,6 +25,7 @@ input[type="submit"] {
 	padding: $btn__padding;
 	text-decoration: none;
 	transition: all 0.3s ease;
+	border-radius: 15px;
 	@media (min-width: 992px) {
 		&:hover {
 			background-color: $btn__primary_hover;

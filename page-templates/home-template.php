@@ -176,7 +176,7 @@ $visibility_contact_form_visibility_footer = get_field( 'visibility_contact_form
                         </div>
                     </div>
                     <div class="image">
-                        <img class="img-fluid" src="http://fixmymind.test/wp-content/uploads/2022/09/James-2.png" alt="jon">
+                        <img class="img-fluid" src="<?= get_template_directory_uri(); ?>/css/images/James-2.webp" alt="jon">
                     </div>
                 </div>
             </div>
@@ -194,19 +194,19 @@ $visibility_contact_form_visibility_footer = get_field( 'visibility_contact_form
                 <p class="p__under">Arrange your free consultation to see how Hypnotherapy can help you, and get a free ‘Accelerated Relaxation Programme’ worth £17.99</p>
                 <div class="row">
                     <div class="col-xl-8 img--holder">
-                        <img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/accelerated-relaxation-program.png?id=9c7e9ba091b76db05165" alt="">
+                        <img class="img-fluid" src="<?= get_template_directory_uri(); ?>/css/images/accelerated-relaxation-program.webp" alt="mobile phone">
                         <div class="features">
                             <ul>
                                 <li>
-                                    <img src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/check.svg?id=e2f7d77b3841eba35af4" alt="">
+                                    <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
                                     <p>FREE 20 minute consultation</p>
                                 </li>
                                 <li>
-                                    <img src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/check.svg?id=e2f7d77b3841eba35af4" alt="">
+                                    <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
                                     <p>FREE 2 hour audio, worth £17.99</p>
                                 </li>
                                 <li>
-                                    <img src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/check.svg?id=e2f7d77b3841eba35af4" alt="">
+                                    <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
                                     <p>10% discount on all treatments</p>
                                 </li>
                             </ul>
@@ -282,8 +282,9 @@ $visibility_contact_form_visibility_footer = get_field( 'visibility_contact_form
                             <div class="text--holder">
                                 <?php the_field( 'content_listen_radio_review' ); ?>
                                 <?php if ( $button_listen_radio_review ) { ?>
-                                    <a class="btn" href="<?php echo $button_listen_radio_review['url']; ?>" target="<?php echo $button_listen_radio_review['target']; ?>"><?php echo $button_listen_radio_review['title']; ?></a>
+                                    <a class="btn" id="play-button" href="https://www.fixmymind.co.uk/media/Fix-My-Mind-Radio-4-Interview.mp3"><?php echo $button_listen_radio_review['title']; ?></a>
                                 <?php } ?>
+                                <audio id="play-bar" type="audio/mpeg" controls src="https://www.fixmymind.co.uk/media/Fix-My-Mind-Radio-4-Interview.mp3"></audio>
                                 <div class="icon">
                                     <?php if ( $right_icon_listen_radio_review ) { ?>
                                         <?php echo wp_get_attachment_image( $right_icon_listen_radio_review, 'medium', "", ["class" => "img-fluid"] ); ?>
@@ -316,9 +317,11 @@ $visibility_contact_form_visibility_footer = get_field( 'visibility_contact_form
                             <div class="col-md-6 home--card">
                             <div class="home--card--holder">
                                     <div class="card-header">
-                                        <?php if ( $icon_list_of_treatments ) { ?>
+										<div class="image--holder">
+										<?php if ( $icon_list_of_treatments ) { ?>
                                             <?php echo wp_get_attachment_image( $icon_list_of_treatments, 'thumbnail' ); ?>
                                         <?php } ?>
+										</div>
                                         <h4><?php the_sub_field( 'title_list_of_treatments' ); ?></h4>
                                     </div>
                                     <div class="text-holder">
@@ -436,19 +439,19 @@ $visibility_contact_form_visibility_footer = get_field( 'visibility_contact_form
                 <p class="p__under">Arrange your free consultation to see how Hypnotherapy can help you, and get a free ‘Accelerated Relaxation Programme’ worth £17.99</p>
                 <div class="row">
                     <div class="col-xl-8 img--holder">
-                        <img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/accelerated-relaxation-program.png?id=9c7e9ba091b76db05165" alt="">
+                        <img class="img-fluid" src="<?= get_template_directory_uri(); ?>/css/images/accelerated-relaxation-program.webp" alt="mobile phone">
                         <div class="features">
                             <ul>
                                 <li>
-                                    <img src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/check.svg?id=e2f7d77b3841eba35af4" alt="">
+                                    <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
                                     <p>FREE 20 minute consultation</p>
                                 </li>
                                 <li>
-                                    <img src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/check.svg?id=e2f7d77b3841eba35af4" alt="">
+                                    <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
                                     <p>FREE 2 hour audio, worth £17.99</p>
                                 </li>
                                 <li>
-                                    <img src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/check.svg?id=e2f7d77b3841eba35af4" alt="">
+                                    <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
                                     <p>10% discount on all treatments</p>
                                 </li>
                             </ul>
@@ -464,7 +467,7 @@ $visibility_contact_form_visibility_footer = get_field( 'visibility_contact_form
     } else { 
         // silence is golden
     } ?>
-
+<div id="width"></div>
 </div><!-- #full-width-page-wrapper -->
 
 <?php
