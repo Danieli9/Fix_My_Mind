@@ -84,6 +84,108 @@
                             }
                         }
                     }
+
+
+                    &.faq {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/faq-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/faq.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.blog {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/blog-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/blog.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.contact {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/contact-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/contact.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.havening {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/Havening-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/Havening.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.location {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/location-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/location.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.pp {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/pp-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/pp.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.timeline {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/timeline-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/timeline.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.hypnotherapys {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/brain-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/brain.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.nlp {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/chat-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/chat.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.therapist {
+                        .dropdown-item {
+                            &::before {
+                                background: url(icon/group-m.svg) no-repeat;
+                                @media (min-width: 992px) {
+                                    background: url(icon/group.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

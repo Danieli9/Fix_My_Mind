@@ -47,12 +47,12 @@ function swiper() {
 			// Responsive breakpoints
 		breakpoints: {
 			// when window width is >= 640px
-			576: {
+			768: {
 			spaceBetween: 30,	
 			slidesPerView: 2,
 			spaceBetween: 40
 			},
-			992: {
+			1200: {
 			slidesPerView: 3,
 			spaceBetween: 40
 			}
@@ -91,6 +91,7 @@ function radio() {
 			event.preventDefault();
 			$(this).addClass('is-active');
 			$("#play-bar").addClass('is-active');
+			$(".icon").addClass('is-active');
 			document.getElementById("play-bar").play()
 		});
 	})(jQuery);

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #394b70;
+      }
+    </style>
+  </defs>
+  <title>contact</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path class="cls-1" d="M19,0H4A2,2,0,0,0,2,2V5H0V7H2V9H0v2H2v2H0v2H2v3a2,2,0,0,0,2,2H19a1,1,0,0,0,1-1V1A1,1,0,0,0,19,0ZM11,3A3,3,0,1,1,8,6,3,3,0,0,1,11,3Zm6,13H5v-.75c0-2.22,2.7-4.5,6-4.5s6,2.28,6,4.5Z"/>
+    </g>
+  </g>
+</svg>

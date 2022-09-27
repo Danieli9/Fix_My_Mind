@@ -16,12 +16,10 @@
 		padding-top: 20px;
 		padding-bottom: 20px;
 		background-color: #5483E0;
-		@media (min-width: 768px) {
-			padding-top: 1px;
-			padding-bottom: 1px;
-		}
 		@media (min-width: 992px) {
 			background-color: transparent;
+			padding-top: 1px;
+			padding-bottom: 1px;
 		}
 		.not-padding-mobile {
 			padding: 0px;

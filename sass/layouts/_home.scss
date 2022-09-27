@@ -4,30 +4,60 @@
         padding-top: 70px;
         padding-bottom: 70px;
         .review--holder-top {
-            width: fit-content;
-            // padding-top: 70px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            @media (min-width: 576px) {
+                
+            }
+            @media (min-width: 992px) {
+                display: initial;
+                width: fit-content;
+            }
             img {
-                max-width: 125px;
+                max-width: 75px;
                 height: auto;
                 display: flex;
-                margin: auto;
+                @media (min-width: 576px) {
+                    max-width: 125px;
+                    // margin: auto;
+                }
+                @media (min-width: 992px) {
+                    margin: auto;
+                }
             }
             .review--score {
                 display: flex;
+                @media (min-width: 992px) {
+                    justify-content: center;
+                }
                 p {
                     margin-bottom: 0px;
-                    font-size: 26px;
+                    
+                    font-size: 18px;
+                    @media (min-width: 576px) {
+                        font-size: 26px;
+                    }
+                    line-height: 2;
                     // color: #77756a;
                 }
                 .reviews-stars {
                     display: flex;
                     align-items: center;
                     color: #F7BA11;
-                    font-size: 25px;
+                    font-size: 19px;
+                    @media (min-width: 576px) {
+                        font-size: 25px;
+                    }
                 }
             }
             p {
                 text-align: center;
+                margin-bottom: 0;
+                // font-size: 26px;
             }
         }
         .mySwiper {
@@ -72,7 +102,7 @@
             margin-bottom: 70px;    
         }
         .container--content {
-            max-width: 1170px;
+            max-width: 1070px;
             h1,h2 {
                 text-align: center;
                 font-weight: 600;
@@ -102,6 +132,15 @@
                         bottom: -40px;
                     }
                 }
+            }
+            p {
+                br {
+                    display: none;
+                    @media (min-width: 576px) {
+                        display: initial;
+                    }
+                }
+
             }
             .content--footer {
                 display: flex;
@@ -154,7 +193,7 @@
                     }
                     @media (min-width: 576px) {
                         position: relative;
-                        bottom: 60px;
+                        bottom: 40px;
                     }
                     img {
                         max-width: 110px;
@@ -171,13 +210,16 @@
         &.treatments {
             background-color: #F3F8FB;
         }
+        &.location {
+            background-color: #FEFEFE;
+        }
         background-color: #E2EFFF;
         padding: 35px 0;
         @media (min-width: 576px) {
             padding: 70px 0;
         }
         .container--content {
-            max-width: 1170px;
+            max-width: 1070px;
             h1,h2 {
                 text-align: center;
                 font-weight: 600;
@@ -255,6 +297,12 @@
                 object-fit: cover;
                 height: fit-content;
                 align-self: flex-end;
+                img {
+                    @media (min-width:400px) and (max-width:576px) {
+                        width: 50%;
+                        margin: auto;
+                    }
+                }
             }
             .text--holder {
                 position: relative;
@@ -265,10 +313,12 @@
                     margin-left: 30px;
                 }
                 h3 {
-                    @include fluid-type(420px, 1440px, 16px, 50px);
+                    @include fluid-type(420px, 1440px, 24px, 47px);
+                    font-weight: 700;
                 }
                 p {
                     margin-bottom: 5px;
+                    @include fluid-type(420px, 1440px, 20px, 20px);
                     @media (min-width: 576px) {
                         margin-bottom: 24px;
                     }
@@ -278,6 +328,7 @@
                     padding: 12px 6px;
                     opacity: 1;
                     max-height: 57px;
+                    display: inline-block;
                     &.is-active {
                         opacity: 0;
                         max-height: 0;
@@ -297,6 +348,12 @@
                     position: absolute;
                     right: 0;
                     bottom: 20px;
+                    &.is-active {
+                        bottom: 100px;
+                        @media (min-width: 768px) {
+                            bottom: 50px;
+                        }
+                    }
                     @media (min-width: 768px) {
                         bottom: 50px;
                     }
@@ -312,6 +369,10 @@
                     opacity: 0;
                     max-height: 0;
                     margin-bottom: 0px;
+                    width: 100%;
+                    @media (min-width: 768px) {
+                        width: 300px;
+                    }
                     &.is-active {
                         opacity: 1;
                         max-height: 55px;
@@ -368,6 +429,7 @@
                     }
                 }
             }
+            
             margin-top: 40px;
             padding-left: 20px;
             padding-right: 20px;
@@ -411,6 +473,14 @@
                     border-bottom-left-radius: 20px;
                     border-bottom-right-radius: 20px;
                     .text-holder-wrapper {
+                        &.philosophy {
+                            p {
+                                display: block;
+                                @media (min-width: 576px) {
+                                    display: block;
+                                }
+                            }
+                        }
                         p {
                             display: none;
                             @media (min-width: 576px) {
@@ -452,7 +522,7 @@
         margin-top: 80px;
         margin-bottom: 80px;
         .container--content {
-            max-width: 1170px;
+            max-width: 1070px;
             h1,h2 {
                 text-align: center;
                 font-weight: 600;
@@ -644,7 +714,7 @@
             padding-bottom: 70px;
         }
         .container--content {
-            max-width: 1170px;
+            max-width: 1070px;
             h1,h2 {
                 text-align: center;
                 font-weight: 600;

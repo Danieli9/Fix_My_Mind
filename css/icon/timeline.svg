@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #394b70;
+      }
+    </style>
+  </defs>
+  <title>timeline</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="web-app">
+        <g id="timeline">
+          <path id="Shape" class="cls-1" d="M6.17,14a3,3,0,0,1,5.66,0H17l1,1-1,1H11.83a3,3,0,0,1-5.66,0H0l1-1L0,14ZM9,16a1,1,0,1,0-1-1A1,1,0,0,0,9,16Zm2-7L9,11,7,9H4A2,2,0,0,1,2,7V2A2,2,0,0,1,4,0H14a2,2,0,0,1,2,2V7a2,2,0,0,1-2,2ZM4,2V7H8L9,8l1-1h4V2Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

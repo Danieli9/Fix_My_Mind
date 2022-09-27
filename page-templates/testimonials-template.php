@@ -99,10 +99,12 @@ get_header();
         <div class="container-md">
             <div class="listen__here--holder">
                 <div class="row g-0">
-                    <div class="col-5 img--holder">
-                        <img class="img-fluid" src="http://fixmymind.test/wp-content/uploads/2022/09/Kelly-Holmes.png" alt="kelly">
-                    </div>
-                    <div class="col-7">
+                   <div class="col-12 col-sm-5 img--holder order-2 order-sm-1">
+                            <?php if ( $left_image_listen_radio_review ) { ?>
+                                <?php echo wp_get_attachment_image( $left_image_listen_radio_review, 'large', "", ["class" => "img-fluid"] ); ?>
+                            <?php } ?>
+                        </div>
+					<div class="col-12 col-sm-7 order-1 order-sm-2">
                         <div class="text--holder">
                             <h3 class="h1">I give my experience of hypnotherapy with James <span>10/10</span></h3>
                             <p>Dame Kelly Holmes</p>

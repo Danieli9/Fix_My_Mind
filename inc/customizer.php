@@ -197,6 +197,9 @@ function hide_editor() {
     if($template_file == 'page-templates/therapies-template.php'){ // edit the template name
     	remove_post_type_support('page', 'editor');
     }
+    if($template_file == 'page-templates/location-template.php'){ // edit the template name
+    	remove_post_type_support('page', 'editor');
+    }
 
 }
 
@@ -292,9 +295,6 @@ function my_custom_fonts() {
 			background: #5483e0;
 		}
 
-
-
-
 		#acf-group_632bc82c46ac1 .postbox-header {
 			background: #e2efff;
 		}
@@ -368,13 +368,31 @@ function stop_smoking_table() {
   </div>
 </div>
 <!-- Stop Smoking Shortcode - End -->
-	
-	
-	
-	
-	
-	
 	';
 }
 
 add_shortcode( 'stop_smoking', 'stop_smoking_table' );
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> true
+	));
+	
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'Theme Header Settings',
+	// 	'menu_title'	=> 'Header',
+	// 	'parent_slug'	=> 'theme-general-settings',
+	// ));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+}
