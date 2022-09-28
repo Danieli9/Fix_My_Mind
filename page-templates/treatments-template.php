@@ -129,7 +129,7 @@ $button_listen_radio_review = get_field( 'button_listen_radio_review' );
                                                 <?php the_content();?>
                                                     <div class="review">
                                                         <h5><?php the_title(); ?></h5>
-                                                        <?php the_date( 'd-m-Y', '<p class="date">', '</p>' ); ?>
+                                                        <?php the_date( 'jS F Y', '<p class="date">', '</p>' ); ?>
                                                         <div class="reviews__stars">★★★★★</div>
                                                     </div>
                                                 </div>

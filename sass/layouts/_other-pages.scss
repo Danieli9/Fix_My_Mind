@@ -103,4 +103,13 @@
         }
 
     }
+    &--others {
+        padding: 70px 0;
+        @media (min-width: 576px) {
+            padding: 120px 0;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            @include fluid-type(420px, 1440px, 22px, 27px);
+        }
+    }
 }

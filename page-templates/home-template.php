@@ -142,7 +142,7 @@ $visibility_contact_form_visibility_footer = get_field( 'visibility_contact_form
                                                 <?php the_content();?>
                                                     <div class="review">
                                                         <h5><?php the_title(); ?></h5>
-                                                        <?php the_date( 'd-m-Y', '<p class="date">', '</p>' ); ?>
+                                                        <?php the_date( 'jS F Y', '<p class="date">', '</p>' ); ?>
                                                         <div class="reviews__stars">★★★★★</div>
                                                     </div>
                                                 </div>
@@ -467,7 +467,6 @@ $visibility_contact_form_visibility_footer = get_field( 'visibility_contact_form
     } else { 
         // silence is golden
     } ?>
-<div id="width"></div>
 </div><!-- #full-width-page-wrapper -->
 
 <?php

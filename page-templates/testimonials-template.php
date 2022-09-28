@@ -8,6 +8,32 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 ?>
+<?php
+// header
+$header_title = get_field( 'header_title' ); 
+$header_subheading = get_field( 'header_subheading' );
+
+$first_image = get_field( 'first_image' );
+$second_image = get_field( 'second_image' );
+$third_image = get_field( 'third_image' );
+$fourth_image = get_field( 'fourth_image' );
+$fifth_image = get_field( 'fifth_image' );
+
+// testimonials header
+$visibility_testimonials_header = get_field( 'visibility_testimonials_header' );
+
+// Trusted By
+$visibility_trusted_by = get_field( 'visibility_trusted_by' );
+
+// Listen Radio Review
+$visibility_listen_radio_review = get_field( 'visibility_listen_radio_review' );
+$left_image_listen_radio_review = get_field( 'left_image_listen_radio_review' );
+$right_icon_listen_radio_review = get_field( 'right_icon_listen_radio_review' );
+$button_listen_radio_review = get_field( 'button_listen_radio_review' );
+
+// Contact Form Visibility Footer
+$visibility_contact_form_visibility_footer = get_field( 'visibility_contact_form_visibility_footer' );
+?>
 
 <div class="wrapper" id="hope--page__wrapper">
 
@@ -15,109 +41,140 @@ get_header();
         <div class="header--bg"></div>
         <div class="container-xxl">
             <div class="row header--row">
-                <div class="col-lg-7 order-2 order-lg-1 header--text__holder">
-                    <div class="header--left__text">
-                        <h1 class="header--h1">Imagine your life when you finally get control of your anxiety</h1>
-                        <p class="header--p">Hello, I'm James Mallinson, and I've used Clinical Hypnotherapy to treat thousands of people for anxiety both online and face to face in London and Winchester</p>
-                        <a class="btn--header__hero" href="/contact/">Get my free consultation</a>
+                    <div class="col-lg-7 order-2 order-lg-1 header--text__holder">
+                        <div class="header--left__text">
+                            <h1 class="header--h1"><?= $header_title; ?></h1>
+                            <p class="header--p"><?= $header_subheading; ?></p>
+                            <a class="btn--header__hero" href="/contact/">Get my free consultation</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-5 order-1 order-lg-2 header--image__holder">
-                    <img class="img-fluid header--right__img" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/portraits/james-mallinson-1.png" alt="jon">
-                </div>
+                    <div class="col-lg-5 order-1 order-lg-2 header--image__holder">
+                        <?php
+                        $random = rand(1,5); 
+                        if ($random == 1 ){
+
+                            if ( $first_image ) {
+                                echo wp_get_attachment_image( $first_image, 'full', "", ["class" => "img-fluid header--right__img"] );
+                            }
+
+                         } elseif($random == 2 ) { 
+
+                            if ( $second_image ) {
+                                echo wp_get_attachment_image( $second_image, 'full', "", ["class" => "img-fluid header--right__img"] );
+                            }
+
+                         } elseif($random == 3 ) { 
+
+                            if ( $third_image ) {
+                                echo wp_get_attachment_image( $third_image, 'full', "", ["class" => "img-fluid header--right__img"] );
+                            }
+
+                         } elseif($random == 4 ) { 
+
+                            if ( $fourth_image ) {
+                                echo wp_get_attachment_image( $fourth_image, 'full', "", ["class" => "img-fluid header--right__img"] );
+                            }
+
+                         } else { 
+
+                            if ( $fifth_image ) {
+                                echo wp_get_attachment_image( $fifth_image, 'full', "", ["class" => "img-fluid header--right__img"] );
+                            }
+
+                         } ?>
+                         
+                    </div>
             </div>
         </div>
     </section>
 
-    <section class="fmm__section--second">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="review--holder">
-                        <img src="<?= get_template_directory_uri(); ?>/css/images/google-logo.png.webp" alt="google">
-                        <div class="review--score">
-                            <p>4.6</p>
-                            <div class="reviews-stars">★★★★★</div>
-                        </div>
-                        <p>115 reviews</p>
-                    </div>
-                </div>
-                <div class="col-lg-10 position-relative">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="text-holder">
-                                    <p>James has a very honest yet approachable style and knows how to put you at ease. From the onset, James explained that this would not be a quick fix for me and I still have some work to do on myself but he has taught me techniques to help ease my fear which are extremely useful. It has given me a confidence boost which is always a bonus and I have left the sessions feeling very calm with a positive outlook towards the future diminishment of my fear. All in all, it has definitely been worth it and I would recommend for anyone with fears that can cause extreme anxiety. *</p>
-                                    <div class="review">
-                                        <h5>Laura Glen</h5>
-                                        <p class="date">23-03-2022</p>
-                                        <div class="reviews__stars">★★★★★</div>
-                                    </div>
-                                </div>
+    <?php if ($visibility_testimonials_header) { 
+    ?>
+        <section class="fmm__section--second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="review--holder-top">
+                            <img src="<?= get_template_directory_uri(); ?>/css/images/google-logo.png.webp" alt="google">
+                            <div class="review--score">
+                                <p>4.6</p>
+                                <div class="reviews-stars">★★★★★</div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="text-holder">
-                                    <p>James helped me with my horse riding anxiety after a bad fall. I really appreciated his open, forthright approach. I have had an excellent result. I have just returned from a week of horse riding abroad and can honestly say that ‘horse behaviour’ that would have terrified me beforehand (e.g., horse refusing to walk forward and backing up close to a cliff edge) I was able to deal with in a cool, confident way that I know I am capable of. I feel that James really put the effort into the session and as a result has helped me enormously. *</p>
-                                    <div class="review">
-                                        <h5>Laura Glen</h5>
-                                        <p class="date">23-03-2022</p>
-                                        <div class="reviews__stars">★★★★★</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="text-holder">
-                                    <p>From unsure and nervous to conquering a phobia I've let control aspects of my life for the past forty years - in a matter of minutes! Still can’t quite believe it, I feel a weight has been lifted from my shoulders. James is friendly, approachable and in my humble opinion, a genius! Thank you *</p>
-                                    <div class="review">
-                                        <h5>Laura Glen</h5>
-                                        <p class="date">23-03-2022</p>
-                                        <div class="reviews__stars">★★★★★</div>
-                                    </div>
-                                </div>
-                            </div>
+                            <p>115 reviews</p>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="col-lg-10 position-relative">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                            <?php $select_testimonials_header = get_field( 'select_testimonials_header' ); ?>
+                                <?php if ( $select_testimonials_header ): ?>
+                                    <?php foreach ( $select_testimonials_header as $post ):  ?>
+                                        <?php setup_postdata ( $post ); ?>
+                                            <div class="swiper-slide">
+                                                <div class="text-holder">
+                                                <?php the_content();?>
+                                                    <div class="review">
+                                                        <h5><?php the_title(); ?></h5>
+                                                        <?php the_date( 'jS F Y', '<p class="date">', '</p>' ); ?>
+                                                        <div class="reviews__stars">★★★★★</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    <?php endforeach; ?>
+                                <?php wp_reset_postdata(); ?>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php
+    } else { 
+        // silence is golden
+    } ?>
 
     <section class="fmm__section--third testimonial">
         <div class="container container--content">
-            <h1><span>Professional Clinical Hypnotherapy</span><br> in London</h1>
-            <p>Hello, we have been using clinical hypnotherapy in to help thousands of people for over 25 years.  Most of our clients just need 2 appointments to experienced significant change.  We’re here to help you to get & be more of what and who you want to be.   And, as we emerge from the chaos of COVID, you may have decided it’s time for you to tackle whatever it is that may be holding you back which we can do face to face, or as effectively via online hypnotherapy session.</p>
-            <p>Do you want to stop smoking, cure a phobia, overcome anxiety, stop panic attacks, lose weight and be more in control?*</p>
-            <p>Or, you may want to be more confident, happier, and successful speaking publicly, or in the areas of your health, family or relationship.*</p>
-            <p>With our huge experience, training and expertise and with over 90 5* reviews* you can have the confidence that Clinical Hypnotherapy and Fix My Mind may be able to help you.   And as an extra incentive, we’re offering a 10% discount on all treatments.    If you want to explore how we can help you, then just use the simple ‘free consultation form’ and we can can have an initial 20 minute discussion to see how we could work together.</p>
-            <p>We look forward to working with you.</p>
+            <?php the_content();?>
         </div>
     </section>
     
-    <section class="fmm__section--seventh">
-        <div class="container-md">
-            <div class="listen__here--holder">
-                <div class="row g-0">
-                   <div class="col-12 col-sm-5 img--holder order-2 order-sm-1">
+    <?php if ($visibility_listen_radio_review) { 
+    ?>
+        <section class="fmm__section--seventh">
+            <div class="container-md">
+                <div class="listen__here--holder">
+                    <div class="row g-0">
+                        <div class="col-12 col-sm-5 img--holder order-2 order-sm-1">
                             <?php if ( $left_image_listen_radio_review ) { ?>
                                 <?php echo wp_get_attachment_image( $left_image_listen_radio_review, 'large', "", ["class" => "img-fluid"] ); ?>
                             <?php } ?>
                         </div>
-					<div class="col-12 col-sm-7 order-1 order-sm-2">
-                        <div class="text--holder">
-                            <h3 class="h1">I give my experience of hypnotherapy with James <span>10/10</span></h3>
-                            <p>Dame Kelly Holmes</p>
-                            <a href="#" class="btn">Listen Here</a>
-                            <div class="icon">
-                                <img class="img-fluid" src="http://fixmymind.test/wp-content/uploads/2022/09/bbc.png" alt="radio">
+                        <div class="col-12 col-sm-7 order-1 order-sm-2">
+                            <div class="text--holder">
+                                <?php the_field( 'content_listen_radio_review' ); ?>
+                                <?php if ( $button_listen_radio_review ) { ?>
+                                    <a class="btn" id="play-button" href="https://www.fixmymind.co.uk/media/Fix-My-Mind-Radio-4-Interview.mp3"><?php echo $button_listen_radio_review['title']; ?></a>
+                                <?php } ?>
+                                <audio id="play-bar" type="audio/mpeg" controls src="https://www.fixmymind.co.uk/media/Fix-My-Mind-Radio-4-Interview.mp3"></audio>
+                                <div class="icon">
+                                    <?php if ( $right_icon_listen_radio_review ) { ?>
+                                        <?php echo wp_get_attachment_image( $right_icon_listen_radio_review, 'medium', "", ["class" => "img-fluid"] ); ?>
+                                    <?php } ?>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php
+    } else { 
+        // silence is golden
+    } ?>
 
     <section class="fmm__section--testimonials">
         <div class="container">
@@ -153,53 +210,65 @@ get_header();
         </div>
     </section>
 
-    <section class="fmm__section--contact">
-        <div class="container">
-            <h2><em>FREE</em> CONSULTATION - VALUE £50</h2>
-            <p class="p__under">Arrange your free consultation to see how Hypnotherapy can help you, and get a free ‘Accelerated Relaxation Programme’ worth £17.99</p>
-            <div class="row">
-                <div class="col-xl-8 img--holder">
-                    <img class="img-fluid" src="<?= get_template_directory_uri(); ?>/css/images/accelerated-relaxation-program.webp" alt="mobile phone">
-                    <div class="features">
-                        <ul>
-                            <li>
-                                <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
-                                <p>FREE 20 minute consultation</p>
-                            </li>
-                            <li>
-                                <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
-                                <p>FREE 2 hour audio, worth £17.99</p>
-                            </li>
-                            <li>
-                                <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
-                                <p>10% discount on all treatments</p>
-                            </li>
-                        </ul>
+    <?php if ($visibility_contact_form_visibility_footer) { 
+    ?>
+        <section class="fmm__section--contact">
+            <div class="container">
+                <h2><em>FREE</em> CONSULTATION - VALUE £50</h2>
+                <p class="p__under">Arrange your free consultation to see how Hypnotherapy can help you, and get a free ‘Accelerated Relaxation Programme’ worth £17.99</p>
+                <div class="row">
+                    <div class="col-xl-8 img--holder">
+                        <img class="img-fluid" src="<?= get_template_directory_uri(); ?>/css/images/accelerated-relaxation-program.webp" alt="mobile phone">
+                        <div class="features">
+                            <ul>
+                                <li>
+                                    <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
+                                    <p>FREE 20 minute consultation</p>
+                                </li>
+                                <li>
+                                    <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
+                                    <p>FREE 2 hour audio, worth £17.99</p>
+                                </li>
+                                <li>
+                                    <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">
+                                    <p>10% discount on all treatments</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 form--holder">
+                        <?= do_shortcode('[contact-form-7 id="15573" title="Squeeze Form 2022"]') ?>
                     </div>
                 </div>
-                <div class="col-xl-4 form--holder">
-                    <?= do_shortcode('[contact-form-7 id="15573" title="Squeeze Form 2022"]') ?>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php
+    } else { 
+        // silence is golden
+    } ?>
     
-    <section class="fmm__section--sixth">
-        <div class="container p-0">
-            <ul>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/bbc-radio-4.png?id=07f591fd8a1364b6e9ce" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/bbc-radio-solent.png?id=1f43dfe1d387277f5071" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/city-am.png?id=7010fec6fa685b8ae0c6" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/daily-mail.png?id=89aff4e70d8d0d666dc0" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/gulf-news.png?id=ffe63f54cd67e04f66e5" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/hampshire-chronicle.png?id=b59b8fde0b5e9369cce6" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/hampshire-life.png?id=2a26014c83c41a111ce4" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/slimming-world.png?id=4d9029509c938092feaf" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/the-observer.png?id=fd68488baf68cfcfcb07" alt="test"></li>
-                <li><img class="img-fluid" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/logos/womens-health.png?id=7f84523fe1e464ca6bd9" alt="test"></li>
-            </ul>
-        </div>
-    </section>
+    <?php if ($visibility_trusted_by) { 
+    ?>
+        <section class="fmm__section--sixth">
+            <div class="container p-0">
+                <ul>
+                <?php if ( have_rows( 'images_group_trusted_by' ) ) : ?>
+                    <?php while ( have_rows( 'images_group_trusted_by' ) ) : the_row(); ?>
+                        <?php $single_image_trusted_by = get_sub_field( 'single_image_trusted_by' ); ?>
+                        <?php if ( $single_image_trusted_by ) { ?>
+                            <li><?php echo wp_get_attachment_image( $single_image_trusted_by, 'medium', "", ["class" => "img-fluid"] ); ?> </li>
+                        <?php } ?>
+                    <?php endwhile; ?>
+                <?php else : ?>
+                    <?php // no rows found ?>
+                <?php endif; ?>
+                </ul>
+            </div>
+        </section>
+    <?php
+    } else { 
+        // silence is golden
+    } ?>
 
 
 

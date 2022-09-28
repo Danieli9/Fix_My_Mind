@@ -33,6 +33,190 @@ function footerMenu() {
 	
 }
 
+
+function initMobileMenu() {
+	(function($) {
+
+		// Toggle the mobile menu hamburger and add class
+		$(".navbar-toggler").click( function(event) {
+			event.preventDefault();
+			
+			$(".navbar-collapse").slideToggle();
+			$(this).toggleClass('is-active');
+			$(".navbar").toggleClass('is-active');
+	
+			if ( $(this).hasClass('is-active') ) {
+				$(this).addClass('open');
+			}
+			else
+				{
+					$(this).removeClass('open');
+					$('.nav-link').removeClass('show');
+					$('.dropdown-menu').removeClass('active');
+					$('.dropdown-menu .menu-item').removeClass('borders');
+
+				}
+		});
+
+		$(".have_dropdown > a").on('click touchend', function(event){
+			event.preventDefault();
+
+			var parent = $(this).closest('li');
+
+			var pWidth = $(this).innerWidth(); //use .outerWidth() if you want borders
+			var pOffset = $(this).offset(); 
+			var x = event.pageX - pOffset.left;
+			 
+			if(pWidth/1.2 > x) {
+				// silenc is golden
+			} else {
+				$(parent).find('> .dropdown-menu').removeClass('active');
+				// $(parent).removeClass('borders');
+				// $(this).parent('li').removeClass('borders');
+			}	
+
+
+			if ( ! $(parent).find('> .dropdown-menu').hasClass('active') ) {
+
+				// hasn't been clicked yet — open
+				$(parent).find('> .dropdown-menu').addClass('active');
+				$(parent).addClass('borders');
+				
+			} else {
+				// has already been expanded — redirect to href
+				window.location = this.href;
+				
+			}
+
+			if(pWidth/1.2 > x) {
+				// silenc is golden
+			} else {
+				$(parent).find('> .dropdown-menu').removeClass('active');
+				
+				if($(parent).hasClass('borders')) {
+					$(parent).removeClass('borders');
+				} else {
+					$(parent).addClass('borders');
+				}
+			}	
+		
+		});
+			
+	})(jQuery);
+
+	(function($) {
+
+		// Reverse
+		// =============================================
+		$.fn.reverse = [].reverse;
+	  
+		// jQuery Extended Family Selectors
+		// =============================================
+		$.fn.cousins = function(filter) {
+		  return $(this).parent().siblings().children(filter);
+		};
+	  
+		$.fn.piblings = function(filter) {
+		  return $(this).parent().siblings(filter);
+		};
+	  
+		$.fn.niblings = function(filter) {
+		  return $(this).siblings().children(filter);
+		};
+	  
+		// Update
+		// =============================================
+		$.fn.update = function() {
+		  return $(this);
+		};
+	  
+		// Dropdown
+		// =============================================
+		$.fn.dropdown = function(options) {
+	  
+		  // Store object
+		  var $this = $(this);
+	  
+		  // Settings
+		  var settings = $.extend({
+			className : 'show',
+		  }, options);
+	  
+		  // Simplify variable names
+		  var className = settings.className;
+	  
+		  // List selectors
+		  var $ul = $this.find('ul'),
+			  $li = $this.find('li'),
+			  $a  = $this.find('a');
+	  
+		  // Menu selectors
+		  var $drawers = $a.next($ul),      // All unordered lists after anchors are drawers
+			  $buttons = $drawers.prev($a), // All anchors previous to drawers are buttons
+			  $links   = $a.not($buttons);  // All anchors that are not buttons are links
+	  
+		  // Toggle menu on-click
+		  $buttons.on('click touchend', function() {
+			var $button = $(this),
+				$drawer = $button.next($drawers),
+				$piblingDrawers = $button.piblings($drawers);
+	  
+			// Toggle button and drawer
+			$button.toggleClass(className);
+			$drawer.toggleClass(className);
+	  
+			// Reset children
+			$drawer.find($buttons).removeClass(className);
+			$drawer.find($drawers).removeClass(className);
+			$drawer.find($drawers).removeClass('borders');
+	  
+			// Reset cousins
+			$piblingDrawers.find($buttons).removeClass(className);
+			$piblingDrawers.find($drawers).removeClass(className);
+			$piblingDrawers.find($drawers).removeClass('active');
+			$piblingDrawers.find($drawers).removeClass('borders');
+			$('.dropdown-menu .menu-item').removeClass('borders');
+	  
+			// Animate height auto
+			$drawers.update().reverse().each(function() {
+			  var $drawer = $(this);
+			  if($drawer.hasClass(className)) {
+				var $clone = $drawer.clone().css('display', 'none').appendTo($drawer.parent()),
+					height = $clone.css('height', 'auto').height() + 'px';
+				$clone.remove();
+				// $drawer.css('height', '').css('height', height);
+			  }
+			  else {
+				$drawer;
+			  }
+			});
+		  });
+	  
+		  // Close menu
+		  function closeMenu() {
+			$buttons.removeClass(className);
+			$drawers.removeClass(className);
+			$drawers.removeClass('borders');
+			$('.dropdown-menu .menu-item').removeClass('borders');
+		  }
+	  
+		  // Close menu after link is clicked
+		  $links.click(function() {
+			closeMenu();
+		  });
+	  
+		  // Close menu when off-click and focus-in
+		  $(document).on('click focusin', function(event) {
+			if(!$(event.target).closest($buttons.parent()).length) {
+			  closeMenu();
+			}
+		  });
+		};
+	})(jQuery);
+	  
+	$('#navbarNavDropdown').dropdown();
+}
+
 function swiper() {
 	var swiper = new Swiper(".mySwiper", {
 		slidesPerView: 1,
@@ -100,25 +284,28 @@ function radio() {
 function initDesktopMenu() {
 	// navmenu
 	document.querySelectorAll('.nav-item').forEach(function(everyitem){
-
 		everyitem.addEventListener('mouseover', function(e){
-
+			
 			let el_link = this.querySelector('.dropdown-menu');
+			let el_link_anchor = this.querySelector('.nav-link');
 
 			if(el_link != null){
 				let nextEl = el_link.nextElementSibling;
 				el_link.classList.add('show');
+				el_link_anchor.classList.add('show');
 			}
 
 		});
 		everyitem.addEventListener('mouseleave', function(e){
 			let el_link = this.querySelector('.dropdown-menu');
+			let el_link_anchor = this.querySelector('.nav-link');
 
 			if(el_link != null){
 				let nextEl = el_link.nextElementSibling;
 				el_link.classList.remove('show');
+				el_link_anchor.classList.remove('show');
+				// el_link_anchor_next.classList.remove('show');
 			}
-
 
 		})
 	});
@@ -126,51 +313,6 @@ function initDesktopMenu() {
 	
 }
 
-function initMobileMenu() {
-	(function($) {
-
-		// Toggle the mobile menu visibility, active class and change button text
-		$(".navbar-toggler").click( function(event) {
-			event.preventDefault();
-			$(".navbar-collapse").slideToggle();
-			$(this).toggleClass('is-active');
-			$(".navbar ").toggleClass('is-active');
-	
-			if ( $(this).hasClass('is-active') ) {
-				$(this).addClass('open');
-			}
-			else
-			{
-				$(this).removeClass('open');
-			}
-		});
-		$(".menu-item").click( function(event) {
-			var parent = $(this).closest('a');
-			var parents = $(this).closest('.menu-item');
-			$(parent).find('> .dropdown-menu').toggleClass('show');
-			$(parents).find('> .nav-link').addClass('show');
-	
-		});
-
-		$(".have_dropdown > a").on('click touchend', function(event){
-			event.preventDefault();
-
-			var parent = $(this).closest('li');
-	
-			if ( ! $(parent).find('> .dropdown-menu').hasClass('show') ) {
-
-				// hasn't been clicked yet — open
-				$(parent).find('> .dropdown-menu').toggleClass('show');
-				$(parent).toggleClass('borders');
-				// $(parent).find('> .c-mobile-nav__sub-indicator').toggleClass('show');
-			} else {
-				// has already been expanded — redirect to href
-				window.location = this.href;
-			}
-		});
-			
-	})(jQuery);
-}
 function init(){
 	
 	filter();
@@ -192,4 +334,32 @@ window.addEventListener('load', function(){
 		initDesktopMenu();
 	
 	}
+});
+
+
+// POPUP
+// Handle opening the popup
+var randomSelector = Math.floor((Math.random() * 10) + 1);
+
+if (randomSelector > 5) {
+
+	setTimeout(function() {
+		var modal_id = $('.js-modal').attr("id");
+		if ( Cookies.get(modal_id) === undefined ) {
+			$('.js-modal').addClass('is-active');
+
+			window.dataLayer = window.dataLayer || [];
+			window.dataLayer.push({
+				'event':'popup'
+			});
+		}
+	}, 45 * 1000);
+}
+
+// Closing the Popup Box
+$('.js-modal-close').click(function(e){
+	e.preventDefault();
+	$(this).closest(".js-modal").fadeOut();
+	var modal_id = $(this).closest(".js-modal").attr('id');
+	Cookies.set(modal_id, true);
 });

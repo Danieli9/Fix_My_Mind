@@ -27,6 +27,32 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 
+<div class="o-modal js-modal" id="fmm-popup">
+	<div class="o-modal__inner">
+		<div class="c-popup">
+			<a href="#0" class="c-popup__close js-modal-close"></a>
+			<i class="c-popup__logo"></i>
+			<h4 class="c-popup__heading">Free Consultation - Value £50</h4>
+				<div class="c-popup__highlight">
+					<div class="o-responsive-valign">
+						<div class="o-responsive-valign__item">
+							<img class="c-popup__img" src="https://www.fixmymind.co.uk/wp-content/themes/fixmymind/dist/images/cd.png?id=67f9ed03080b0c8f2958" loading="lazy">
+						</div>
+						<div class="o-responsive-valign__item">
+							<ul class="c-popup__list">
+								<li class="c-popup__list__item"><img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">2hr download value - £17.99</li>
+								<li class="c-popup__list__item"><img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">20 minute consultation</li>
+								<li class="c-popup__list__item"><img src="<?= get_template_directory_uri(); ?>/css/images/check.svg" alt="check">10% discount on all treatments</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<?= do_shortcode('[contact-form-7 id="1960" title="Popup"]'); ?>
+			</div>
+		</div>
+	</div>
+</div>
+
 	<header id="masthead" class="site-header">
 
 		<nav id="site-navigation" class="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -57,7 +83,7 @@
 				);
 				
 				?>
-				<a href="#" class="d-none d-lg-block btn--header">0800 122 3073</a>
+				<a href="tel:08001223073" class="d-none d-lg-block btn--header">0800 122 3073</a>
 			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

@@ -65,10 +65,17 @@
                         color: $theme__white;
                         text-align: center;
                         margin-bottom: 15px;
+                        margin-top: 0;
                         @include fluid-type(420px, 1440px, 21px, 58px);
+                        @media (min-width:992px) and (max-width:1200px){
+                            margin-top: 10px;
+                        }
                         @media (min-width: 992px) {
                             text-align: left;
                             margin-bottom: 35px;
+                        }
+                        @media (min-width: 1200px) {
+                            margin-bottom: 15px;
                         }
                     }
                     .header--p {

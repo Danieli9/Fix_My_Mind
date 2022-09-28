@@ -1,0 +1,192 @@
+.o-modal {
+    position: fixed;
+    padding: 20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 100;
+    text-align: center;
+    overflow-y: scroll;
+    display: none;
+    overflow: hidden;
+    
+    &.is-active {
+        display: block;
+    }
+
+    &__inner {
+        background: #fff;
+        margin: 0 auto;
+        max-width: 630px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 15px;
+        @media (min-width: 768px) {
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 630px;
+        }
+        .c-popup {
+            border-radius: 15px;
+            background: #5c91e4;
+            color: #fff;
+            padding: 12px 12px;
+            .c-popup__close {
+                background-image: url(images/icon-close.webp);
+                display: block;
+                height: 26px;
+                position: absolute;
+                right: 1em;
+                top: 1em;
+                width: 26px;
+            }
+            .c-popup__logo {
+                background-image: url(images/logo-popup.webp);
+                display: none;
+                height: 44px;
+                margin-bottom: 6px;
+                width: 151px;
+                @media (min-width: 768px) {
+                    display: inline-block;
+                }
+            }
+            .c-popup__heading {
+                padding-bottom: 0;
+                padding-top: 0;
+                text-transform: uppercase;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                background: linear-gradient(180deg,#fdfdfd 0,#cbc8c3);
+                font-size: 20px;
+                color: #4785e1;
+                border-radius: 3px;
+                font-weight: 800;
+                padding-left: 10px;
+                @media (min-width: 576px) {
+                    min-height: 99px;
+                    line-height: 99px;
+                    font-size: 30px;
+                    text-align: left;
+                    background: url(images/headshot-smaller.webp) 100% 100% no-repeat,linear-gradient(180deg,#fdfdfd 0,#cbc8c3);
+                }
+            }
+            .c-popup__highlight {
+                background: #6e9be6;
+                margin-bottom: 12px;
+                padding: 12px;
+                .o-responsive-valign {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    @media (min-width: 576px) {
+                        flex-direction: row;
+                    }
+                    .o-responsive-valign__item {
+                        display: table-cell;
+                        vertical-align: middle;
+                        img {
+                            margin-bottom: 12px;
+                        }
+                        .c-popup__list {
+                            list-style-type: none;
+                            margin: 0 auto;
+                            padding-left: 0px;
+                            text-align: left;
+                            @media (min-width: 576px) {
+                                max-width: 250px;
+                            }
+                            .c-popup__list__item {
+                                line-height: 1.2;
+                                font-size: 16px;
+                                margin-bottom: 12px;
+                                display: flex;
+                                @media (min-width: 576px) {
+                                    font-size: 20px;
+                                }
+                                img {
+                                    max-width: 15px;
+                                    max-width: 15px;
+                                    height: 14px;
+                                    align-self: center;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            .wpcf7 {
+                .c-popup__form {
+                    position: relative;
+                    .wpcf7-form-control-wrap {
+                        width: 100%;
+                        input {
+                            width: 100%;
+                            padding: 5px 10px;
+                            height: 50px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .o-input-addon {
+                        display: flex;
+                        width: 100%;
+                        flex-direction: column;
+                        @media (min-width: 768px) {
+                            flex-direction: row;
+                        }
+                        p {
+                            display: none;
+                        }
+                        .wpcf7-form-control-wrap {
+                            width: 100%;
+                            @media (min-width: 768px) {
+                                width: 68%;
+                            }
+                            input {
+                                width: 100%;
+                                height: 100%;
+                                padding: 5px 10px;
+                                margin-bottom: 15px;
+                                height: 50px;
+                            }
+                        }
+                    }
+                    .btn {
+                        border: none;
+                        padding: 17px;
+                        margin-left: 20px;
+                    }
+                    .c-popup__radio {
+                        width: 100%;
+                        margin-left: 0px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        color: #FEFEFE;
+                        .wpcf7-list-item {
+                            margin-left: 0px;
+                            input {
+                                width: initial;
+                                height: initial;
+                                padding: initial;
+                                margin-bottom: initial;
+                                span {
+                                    font-size: 14px !important;
+                                }
+                            }
+                        }
+                    }
+                }        
+            }
+        }
+        
+    }
+}
